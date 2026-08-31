@@ -109,28 +109,42 @@ This is worth doing if you plan to edit CSS or layout, since those are hard to j
 
 ## Getting an EPUB (to sell)
 
-**Heads up: EPUB is not generated automatically.** The deploy pipeline builds HTML only. An earlier version of the README claimed otherwise — that was wrong and is now corrected.
+**Heads up: EPUB is not generated automatically.** The deploy pipeline builds HTML only, and `[output.epub]` is deliberately **not** kept in the committed `book.toml`. If it were, the next CI build would nest HTML under `book/html/` instead of `book/` (mdBook changes its output layout the moment more than one renderer is configured), which would 404 every page on the live site. Generate the EPUB locally instead — no need to touch the repo config permanently.
 
-You only need the EPUB once (to upload to Lemon Squeezy), so generating it locally is fine:
+You do **not** need to install Rust/cargo for this — both tools ship prebuilt Windows binaries, which is faster and avoids needing a C linker:
 
 ```bash
-# Requires Rust/cargo installed first: https://rustup.rs
-cargo install mdbook-epub
+mkdir -p .tools/bin
+cd .tools/bin
+
+# mdBook itself
+gh release download -R rust-lang/mdBook -p "mdbook-*-x86_64-pc-windows-msvc.zip" --clobber
+unzip -o mdbook-*.zip && rm mdbook-*.zip
+
+# the EPUB renderer plugin — must be named exactly mdbook-epub.exe to be found by mdBook
+gh release download -R Michael-F-Bryan/mdbook-epub -p "mdbook-epub-windows-amd64.exe" --clobber
+mv mdbook-epub-windows-amd64.exe mdbook-epub.exe
+chmod +x mdbook-epub.exe
+
+cd ../..
 ```
 
-Then add this to the bottom of `book.toml`:
+Then, **temporarily** add this to the bottom of `book.toml` (do not commit it — see warning above):
 
 ```toml
 [output.epub]
 ```
 
-Then:
+Build with the local tools on PATH:
 ```bash
-mdbook build
+PATH="$PWD/.tools/bin:$PATH" mdbook build
 # EPUB appears at: book/epub/100 Solopreneur Short Stories.epub
+# HTML appears at: book/html/  (nested, because 2 renderers are now active — ignore it, don't push it)
 ```
 
-Upload that file to Lemon Squeezy as the digital product.
+**Then revert `book.toml`** — remove the `[output.epub]` line before committing anything else, so the live deploy pipeline stays on its flat, working HTML layout.
+
+Upload the resulting `.epub` file to Lemon Squeezy as the digital product. `.tools/` and `*.epub` are both gitignored — the binaries and the book file are local-only and never get pushed.
 
 ---
 

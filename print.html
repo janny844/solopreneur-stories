@@ -1,0 +1,1230 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>100 Solopreneur Short Stories</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="Gripping, raw, unvarnished tales of solo founders building in silence.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-e96d0476.css">
+        <link rel="stylesheet" href="css/chrome-d279d366.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/custom-dfac3005.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-d3b58f7f.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-305ee12d.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">100 Solopreneur Short Stories</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/janny844/solopreneur-stories" title="Git repository" aria-label="Git repository">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="100-solopreneur-short-stories"><a class="header" href="#100-solopreneur-short-stories">100 Solopreneur Short Stories</a></h1>
+<blockquote>
+<p><em>Bite-sized, high-impact stories of solo founders who built something real — alone, broke, and against the odds.</em></p>
+</blockquote>
+<hr>
+<div style="text-align:center; padding:2rem; background:#1e293b; border-radius:12px; margin:2rem 0;">
+  
+<h2 style="margin-top:0; color:#f8fafc;">Get the Complete Collection</h2>
+
+  
+<p style="color:#94a3b8; margin-bottom:1.5rem;">All 100 stories. EPUB for Kindle, iPad, or any e-reader. One payment, yours forever.</p>
+
+  <a href="YOUR_LEMON_SQUEEZY_OR_GUMROAD_URL" target="_blank" style="background:#38bdf8; color:#0f172a; font-weight:bold; padding:0.85rem 1.75rem; border-radius:8px; text-decoration:none; font-size:1.1rem; display:inline-block;">
+    Download Full EPUB — $9
+  </a>
+  
+<p style="color:#64748b; font-size:0.9rem; margin-top:1rem;">First 3 stories are free below. No account required.</p>
+
+</div>
+
+<hr>
+<h2 id="what-is-this"><a class="header" href="#what-is-this">What is this?</a></h2>
+<p>These are not TED talks polished into prose. They are not LinkedIn success theatre.</p>
+<p>They are the <em>real</em> stories — the 2 AM refreshes, the months with zero revenue, the product launches that flopped before the one that didn’t. They are stories of people who had no investors, no team, no safety net, and built something anyway.</p>
+<p>Each story is short. Each story is true. Each story ends with something you can actually use.</p>
+<hr>
+<h2 id="free-sample-stories"><a class="header" href="#free-sample-stories">Free Sample Stories</a></h2>
+<p>Use the sidebar to read the first 3 stories free in your browser:</p>
+<ol>
+<li><strong>Marc Lou</strong> — <em>The indie hacker who sold $1M in templates and turned a side project into a product empire.</em></li>
+<li><strong>Pieter Levels</strong> — <em>The nomad who launched 12 startups in 12 months from airport lounges and beach cafes.</em></li>
+<li><strong>Danny Postma</strong> — <em>The designer who accidentally built a SaaS product that scaled itself.</em></li>
+</ol>
+<hr>
+<h2 id="the-writing-style"><a class="header" href="#the-writing-style">The Writing Style</a></h2>
+<p>These stories are written in the tradition of the Chinese public essay — narrative-driven, gripping, specific.</p>
+<p>No bullet points. No “key takeaways” section. No frameworks with clever acronyms.</p>
+<p>Just the story. The moment. The number. The thing that changed.</p>
+<p>You will read these in one sitting. You will think about them afterward.</p>
+<hr>
+<p><em>Ready? Start with <a href="#marc-lou-the-indie-hacker-who-sold-1m-in-templates">Marc Lou →</a></em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="marc-lou-the-indie-hacker-who-sold-1m-in-templates"><a class="header" href="#marc-lou-the-indie-hacker-who-sold-1m-in-templates">Marc Lou: The Indie Hacker Who Sold $1M in Templates</a></h1>
+<p>At 11:47 PM on a Wednesday, Marc Lou refreshed his Stripe dashboard for the fourth time that hour.</p>
+<p>$0.</p>
+<p>He closed the laptop.</p>
+<p>This was the part nobody posted about on Twitter. Not the revenue charts, not the follower counts — just a man in a small Paris apartment staring at a number that hadn’t moved in three days.</p>
+<p>He had quit his job four months earlier. He had $6,000 in savings. He had a product he believed in. And he had, by every measurable metric, absolutely nothing to show for it.</p>
+<hr>
+<h2 id="before-the-money"><a class="header" href="#before-the-money">Before the Money</a></h2>
+<p>Marc Lou was not a prodigy. He grew up in Lyon, studied engineering, took a job at a startup building internal tools for enterprises. The work was fine. The salary was fine. Everything about it was fine — which was, he would later say, the problem.</p>
+<p>“Fine is the enemy of alive,” he wrote in a tweet years later. At the time, he couldn’t have articulated it that cleanly. He just felt the ceiling.</p>
+<p>He started building things at night. A small Chrome extension. A JavaScript library nobody used. A productivity app that got fourteen downloads, twelve of which were probably him testing the install flow.</p>
+<p>None of it worked. All of it mattered.</p>
+<p>Because the thing about building in the dark is that you learn something even when nothing ships. You learn how to debug at midnight when your brain is tired. You learn how to ship ugly code that works over beautiful code that doesn’t. You learn that you can keep going after a failure, because what else are you going to do?</p>
+<p>He built for two years before he built the thing that changed everything.</p>
+<hr>
+<h2 id="the-product-nobody-asked-for"><a class="header" href="#the-product-nobody-asked-for">The Product Nobody Asked For</a></h2>
+<p>ShipFast started as a README file.</p>
+<p>Marc had built a SaaS product — a small tool for indie hackers — and the process of setting it up had taken him three weeks of boilerplate: auth, payments, email, landing pages, database connections. Three weeks of infrastructure before he could write a single line of his actual product.</p>
+<p>“I am never doing this again,” he thought.</p>
+<p>So he packaged everything he’d built into a Next.js boilerplate and put it on Gumroad for $99.</p>
+<p>He launched on a Tuesday. He told no one. He had no email list, no Twitter following worth mentioning, no Product Hunt campaign prepared. He just put it up and went to sleep.</p>
+<p>He woke up to $297.</p>
+<p>Three sales. Three strangers had found the thing, read the description, decided it was worth $99, and bought it. In his sleep.</p>
+<p>He stared at the number for a long time.</p>
+<hr>
+<h2 id="the-pivot-that-wasnt"><a class="header" href="#the-pivot-that-wasnt">The Pivot That Wasn’t</a></h2>
+<p>Here is what most people misunderstand about Marc Lou’s story: he did not suddenly become a marketing genius. He did not go viral. He did not crack some algorithm.</p>
+<p>He just kept going.</p>
+<p>He updated the boilerplate. He added features people asked for in the reviews. He raised the price to $149, then $199. Each time he raised the price, he braced for the sales to drop. Each time, they didn’t.</p>
+<p>He started a Twitter account and posted about what he was building. Not threads with “🧵” at the top. Just honest, specific posts about what worked, what didn’t, how much he made that week.</p>
+<p>The following grew because the content was real. People can tell. There is a texture to genuine struggle that manufactured content doesn’t have — a specificity, an awkwardness, a detail that no one would invent.</p>
+<p>“Made $3,200 in February. Spent $180 on coffee. Net: still alive.”</p>
+<p>That kind of thing.</p>
+<hr>
+<h2 id="the-number"><a class="header" href="#the-number">The Number</a></h2>
+<p>Twelve months after launching ShipFast, Marc Lou had made $347,000.</p>
+<p>Eighteen months in: $612,000.</p>
+<p>Two years in: $1,000,000.</p>
+<p>One person. No employees. No investors. No office. A laptop, a Gumroad page, and a boilerplate that saved developers three weeks of setup time.</p>
+<p>The product had not fundamentally changed. The market had not expanded dramatically. He had not run a single paid ad.</p>
+<p>What had changed was compound trust. Every honest tweet, every product update, every moment where he admitted something wasn’t working and then showed what he did about it — all of it stacked. The internet rewards consistency over time in a way it rarely rewards single moments of brilliance.</p>
+<hr>
+<h2 id="what-he-learned-so-you-dont-have-to"><a class="header" href="#what-he-learned-so-you-dont-have-to">What He Learned (So You Don’t Have To)</a></h2>
+<p>Marc Lou talks about three things when people ask him how he did it.</p>
+<p><strong>The first is specificity.</strong> Generic products die. ShipFast survived because it solved one exact problem — the three weeks of setup — and solved it completely. It did not try to be a platform or a suite or an ecosystem. It tried to save you three weeks of your life. That’s it.</p>
+<p><strong>The second is price.</strong> He raised the price four times. Each time he was afraid. Each time the sales increased. The people who will pay $199 for something that saves them time are not the same people who balk at $99. The people willing to pay $199 are better customers — they value their time, they implement quickly, they don’t email you asking you to build the product for them.</p>
+<p><strong>The third is showing the process.</strong> Not the results — the process. The uncertain weeks. The features that flopped. The morning he almost shut it down. “People don’t want your success,” he says. “They want proof that someone like them succeeded. Show them you were someone like them.”</p>
+<hr>
+<h2 id="the-last-thing"><a class="header" href="#the-last-thing">The Last Thing</a></h2>
+<p>Marc Lou still refreshes his Stripe dashboard.</p>
+<p>He probably always will.</p>
+<p>But the number is different now. And more importantly, so is what he feels when he sees it. Not relief. Not validation.</p>
+<p>Just the quiet satisfaction of a man who built something real, alone, in a Paris apartment, at 11:47 PM on a Wednesday.</p>
+<p>The rest is details.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="pieter-levels-the-nomad-who-built-12-startups-in-12-months"><a class="header" href="#pieter-levels-the-nomad-who-built-12-startups-in-12-months">Pieter Levels: The Nomad Who Built 12 Startups in 12 Months</a></h1>
+<p>The flight from Bangkok to Chiang Mai takes fifty minutes.</p>
+<p>Pieter Levels spent that flight writing code.</p>
+<p>Not planning code. Not sketching on a napkin. Writing it — in a middle seat, on a 13-inch MacBook Air, with the tray table down and his elbows tucked against his sides because the man next to him was asleep and taking half the armrest.</p>
+<p>This was 2014. He had been traveling for four months. He had launched two startups. Both had failed. He had $4,400 left in his account, no permanent address, and a public promise on his website that he intended to keep: twelve startups in twelve months.</p>
+<p>He had ten left.</p>
+<hr>
+<h2 id="the-bet-he-made-with-himself"><a class="header" href="#the-bet-he-made-with-himself">The Bet He Made With Himself</a></h2>
+<p>Pieter Levels is Dutch. He grew up in the Netherlands, studied at a university, played in a band, started a YouTube channel that reached three million subscribers before he shut it down because it felt like a job.</p>
+<p>The pattern was already there, if you knew to look for it: he would build something, it would work, and then he would leave.</p>
+<p>Not because things got hard. Because things got normal.</p>
+<p>In 2013, he sold everything he owned — the furniture, the guitar, most of his clothes — and bought a one-way ticket to Asia. He was twenty-six. His plan was to travel indefinitely and fund it through online work.</p>
+<p>The twelve startups idea came later, from frustration. He had too many ideas and not enough urgency. The public commitment was a forcing function — a way of saying: if you’re going to build these things, build them now, because you’ve told the entire internet you would.</p>
+<p>The internet held him to it.</p>
+<hr>
+<h2 id="the-product-that-worked"><a class="header" href="#the-product-that-worked">The Product That Worked</a></h2>
+<p>Startup number four was called Nomad List.</p>
+<p>It started as a spreadsheet. A simple Google Sheets document where Pieter logged the cities he’d been to: cost of living, internet speed, weather, safety score. He made it public because sharing felt natural.</p>
+<p>Within a week, 10,000 people had viewed it.</p>
+<p>He turned it into a website in a weekend. No landing page, no investor pitch, no user research sessions. Just a database of cities and a simple interface to sort them. He launched it on Hacker News with a two-sentence post.</p>
+<p>It got to the front page.</p>
+<p>The traffic crashed his $5/month server three times that day. He upgraded the server between each crash. By the end of the week, Nomad List had 800,000 pageviews and Pieter had made $0 from it.</p>
+<p>He added a $100/year membership the following Monday.</p>
+<p>He made $1,000 in the first hour.</p>
+<hr>
+<h2 id="the-architecture-of-one-person"><a class="header" href="#the-architecture-of-one-person">The Architecture of One Person</a></h2>
+<p>Here is what Pieter Levels understood before most people did: the internet makes it possible for one person to serve a million people, but only if you build the product to require zero people.</p>
+<p>Every feature he didn’t build was a support ticket that would never arrive. Every decision he automated was a morning he didn’t spend in his inbox. He built Nomad List to run without him not because he was lazy, but because he was one person and there was a finite amount of him to go around.</p>
+<p>He did not hire a team. He did not raise funding. Investors emailed. He ignored them.</p>
+<p>“If I take investment, I have to do what the investor wants,” he said in an interview. “I don’t want to do what investors want. I want to do what I want.”</p>
+<p>What he wanted, specifically, was to work four hours a day, travel wherever he liked, and build products that solved real problems for real people.</p>
+<p>He made $2.7 million in revenue in 2023. Solo. From a beach in Thailand.</p>
+<hr>
+<h2 id="the-twelve-months"><a class="header" href="#the-twelve-months">The Twelve Months</a></h2>
+<p>He finished the challenge.</p>
+<p>Twelve startups. Not twelve successes — twelve launches. Some made money. Most didn’t. One, Remote OK, grew alongside Nomad List into a job board that served 100,000 monthly users.</p>
+<p>The point was never to succeed twelve times. The point was to ship twelve times — to build the muscle memory of launching, of putting things in front of people, of seeing what happened when you stopped perfecting and started publishing.</p>
+<p>“Every time I ship something and it doesn’t work,” he said, “I learn something worth more than if it had worked.”</p>
+<p>He would know.</p>
+<hr>
+<h2 id="what-he-carried-forward"><a class="header" href="#what-he-carried-forward">What He Carried Forward</a></h2>
+<p>The question people always ask Pieter Levels is: how do you stay motivated without a team, without an office, without the structure of a normal company?</p>
+<p>He gives the same answer every time.</p>
+<p>“I’m not motivated,” he says. “I’m curious.”</p>
+<p>Motivation is emotional — it rises and falls with mood, sleep, weather. Curiosity is structural. It pulls you toward problems because you genuinely want to know what happens when you try to solve them.</p>
+<p>The fifty-minute flight from Bangkok to Chiang Mai is long enough to build a feature if you already know what you’re building. The trick is always knowing what you’re building next.</p>
+<p>He has never not known.</p>
+<hr>
+<h2 id="the-number-1"><a class="header" href="#the-number-1">The Number</a></h2>
+<p>Pieter Levels’s publicly disclosed revenue is approximately $3 million per year.</p>
+<p>One person. No office. No team. A laptop that lives in a backpack, a collection of small products that compound slowly into something large, and a calendar with no commute on it.</p>
+<p>The Bangkok-to-Chiang Mai flight takes fifty minutes.</p>
+<p>He has never once wasted one.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="danny-postma-the-designer-who-accidentally-became-a-saas-founder"><a class="header" href="#danny-postma-the-designer-who-accidentally-became-a-saas-founder">Danny Postma: The Designer Who Accidentally Became a SaaS Founder</a></h1>
+<p>Danny Postma did not set out to build a SaaS.</p>
+<p>He set out to make a wallpaper.</p>
+<p>This is the part of the story he tells reluctantly, because it sounds too simple — almost embarrassingly simple — for something that would eventually generate $40,000 in a single month.</p>
+<p>But there it is.</p>
+<hr>
+<h2 id="the-tool-he-built-for-himself"><a class="header" href="#the-tool-he-built-for-himself">The Tool He Built For Himself</a></h2>
+<p>In 2021, Danny Postma was a designer. Not a startup founder, not an entrepreneur with a five-year plan — a designer who took on client work and occasionally launched small projects that mostly went nowhere.</p>
+<p>He needed headshots for a website. Real headshot photography was expensive — $200 at minimum, usually more, requiring a photographer and a location and the kind of availability that freelancers rarely have.</p>
+<p>He wondered if AI could do it.</p>
+<p>It couldn’t. Not yet. Not well.</p>
+<p>But he thought about it. He kept thinking about it. Over the following months, he watched the image generation models get better. He watched Stable Diffusion release. He watched the gap between “AI-generated image” and “usable professional photo” close, slowly, then faster.</p>
+<p>In October 2022, he built a tool.</p>
+<p>He called it Headshot Pro.</p>
+<p>He wasn’t sure it would work. He built it anyway.</p>
+<hr>
+<h2 id="the-launch-nobody-saw-coming"><a class="header" href="#the-launch-nobody-saw-coming">The Launch Nobody Saw Coming</a></h2>
+<p>He posted it on Twitter on a Tuesday.</p>
+<p>No fanfare. No Product Hunt strategy. No email list warming campaign. He had maybe 3,000 Twitter followers — a modest audience, the kind that gets you a few hundred impressions on a normal day.</p>
+<p>The tweet said: “I made a thing. Upload 10 photos, get 100 AI headshots back. It actually works.”</p>
+<p>He attached a screenshot.</p>
+<p>Within four hours, the tweet had 400 retweets.</p>
+<p>Danny Postma does not describe himself as a marketing person. He describes himself as someone who accidentally discovered that the most effective marketing is just showing something that genuinely surprises people.</p>
+<p>The headshots surprised people.</p>
+<p>Not because they were perfect — they weren’t, not at launch. But because they were close enough to be useful, and close enough to be interesting, and interesting things on the internet travel fast.</p>
+<p>By the end of that first day, he had made $4,300.</p>
+<p>He had not told a single person he was launching. He had not sent a single email. He had posted one tweet and gone to make coffee.</p>
+<hr>
+<h2 id="what-he-did-next"><a class="header" href="#what-he-did-next">What He Did Next</a></h2>
+<p>Danny Postma made a decision that, in retrospect, looks obvious but at the time felt risky: he did not change anything.</p>
+<p>He did not add features. He did not pivot. He did not raise his prices immediately or try to push the product into new markets.</p>
+<p>He fixed what broke.</p>
+<p>Because things broke. The queue backed up when too many users uploaded photos at once. The model occasionally returned something unusable — a professional headshot with six fingers, or a background that was technically correct but somehow slightly wrong.</p>
+<p>He fixed the queue. He improved the model. He wrote better prompts.</p>
+<p>Each fix made the product a little better. Each improvement generated a little more word of mouth. By December 2022 — two months after launch — he had made $200,000 in revenue.</p>
+<p>One person. A designer who had never built a SaaS. No co-founder, no investor, no employee.</p>
+<p>Just a product that worked, getting incrementally less broken over time.</p>
+<hr>
+<h2 id="the-imitation"><a class="header" href="#the-imitation">The Imitation</a></h2>
+<p>By January 2023, there were eleven products that looked exactly like Headshot Pro.</p>
+<p>This is what happens when something works on the internet. The copycats arrive before the confetti does.</p>
+<p>Danny Postma did not panic. He did something more interesting: he watched.</p>
+<p>He watched the copycats compete on price. He watched them rush features he hadn’t built. He watched them run ads he hadn’t run. And he noticed something.</p>
+<p>His customers were not leaving.</p>
+<p>Not because his product was better in every technical dimension — it wasn’t, by then. But because trust compounds. The people who had used Headshot Pro in October and told their colleagues about it in November did not care about the cheaper alternatives in January. They had a recommendation already. Recommendations don’t refresh on a monthly basis.</p>
+<p>“You cannot copy a head start,” he wrote in a newsletter.</p>
+<p>He was right.</p>
+<hr>
+<h2 id="the-designers-edge"><a class="header" href="#the-designers-edge">The Designer’s Edge</a></h2>
+<p>Here is the thing about Danny Postma that the story usually forgets: the reason Headshot Pro worked was not the AI. Other people had access to the same AI models.</p>
+<p>The reason it worked was the design.</p>
+<p>The interface was clean in a way that made the product feel trustworthy before you’d used it. The upload flow was simple in a way that reduced friction at the exact moment users were most likely to abandon. The output presentation was polished in a way that made good results look great and mediocre results look passable.</p>
+<p>Design is not decoration. It is the difference between a product people understand and a product people don’t. Between a feature people discover and a feature people miss. Between revenue and refund requests.</p>
+<p>He had spent ten years learning how to make things clear.</p>
+<p>The AI did the impressive work. The design did the conversion.</p>
+<p>Both were required. Only one of them was available to everyone.</p>
+<hr>
+<h2 id="the-accidental-blueprint"><a class="header" href="#the-accidental-blueprint">The Accidental Blueprint</a></h2>
+<p>Danny Postma did not set out to teach anyone how to build a SaaS.</p>
+<p>But after Headshot Pro, he started writing about it — the launch, the numbers, the decisions. People read it. More people asked questions. He started a newsletter.</p>
+<p>He now makes revenue from Headshot Pro, from a second SaaS product, and from the newsletter. Three income streams. One person. A designer who learned, by accident, that the skills he already had were worth more than he knew.</p>
+<p>“The best business to start,” he has written, “is the one where you’re already an expert and nobody has made it easy yet.”</p>
+<p>He was a designer. Headshots were not easy yet.</p>
+<p>Now they are.</p>
+<p>He made them that way.</p>
+<hr>
+<h2 id="the-number-2"><a class="header" href="#the-number-2">The Number</a></h2>
+<p>$40,000 in a single month. Multiple months. From a tool he built because he needed a profile photo.</p>
+<p>Some stories have a moment of genius at the center. A breakthrough idea, a clever insight, a calculated risk that paid off.</p>
+<p>Danny Postma’s story has a wallpaper.</p>
+<p>And a problem he had himself.</p>
+<p>And the willingness to build the answer even when he wasn’t sure it would work.</p>
+<p>That’s the whole thing. That’s all of it.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="tony-dinh-the-vietnamese-developer-who-built-an-empire-of-small-products"><a class="header" href="#tony-dinh-the-vietnamese-developer-who-built-an-empire-of-small-products">Tony Dinh: The Vietnamese Developer Who Built an Empire of Small Products</a></h1>
+<p>The first sale came at 3:14 AM.</p>
+<p>Tony Dinh was asleep when it happened. He woke up to a Stripe notification on his phone — $29, from a stranger in Germany who had found his Mac app while searching for something else entirely.</p>
+<p>He lay there in the dark in his apartment in Ho Chi Minh City and read the notification three times.</p>
+<p>This was 2020. He had been a software engineer at a startup for three years. The salary was good. The work was fine. Everything was fine.</p>
+<p>He quit four months later.</p>
+<hr>
+<h2 id="the-calculation"><a class="header" href="#the-calculation">The Calculation</a></h2>
+<p>Tony Dinh made a spreadsheet before he quit his job. Not a feelings spreadsheet, not a goals spreadsheet — a numbers spreadsheet.</p>
+<p>If he made one product that earned $500/month, and then another, and then another, at some point the sum would exceed his salary. That was the whole calculation.</p>
+<p>It was almost embarrassingly simple. But simple things have a way of being true that complicated things don’t.</p>
+<p>He had already made his first product — a Mac app called Tweetify that converted threads into images. It was making $200/month when he quit. Not enough to live on. Enough to prove the model worked.</p>
+<p>He needed more products. He started building more products.</p>
+<hr>
+<h2 id="the-portfolio-strategy"><a class="header" href="#the-portfolio-strategy">The Portfolio Strategy</a></h2>
+<p>Most founders try to build one thing and make it big. Tony Dinh tried to build many things and make them sustainable.</p>
+<p>By 2022, he had six products in market: a Twitter analytics tool, a Mac utility, a bookmark manager, a writing app, two smaller tools. Some made $50/month. Some made $2,000/month. None of them had made him rich.</p>
+<p>Together, they paid his rent, his food, his occasional flight to a new country to work from for a month.</p>
+<p>He called it the “portfolio of small bets” strategy before that phrase became a cliché. The logic was simple: if one product dies — and they do die, to algorithm changes, to competition, to changing markets — the others keep the lights on. Diversification as survival mechanism.</p>
+<p>“I don’t want to be dependent on one product,” he wrote in a public post that went small-viral in the indie hacker community. “One product is fragile. Many products is a business.”</p>
+<hr>
+<h2 id="the-thing-that-worked"><a class="header" href="#the-thing-that-worked">The Thing That Worked</a></h2>
+<p>In late 2021, Tony launched ScreenSnapAI — a screenshot enhancement tool for Mac.</p>
+<p>He had built it for himself. He took a lot of screenshots for tutorials and documentation, and he was tired of the raw, ugly look of unformatted screenshots. He wanted something that would add a background, a shadow, a frame — automatically, without effort.</p>
+<p>He built it over two weekends.</p>
+<p>The launch was modest: a tweet, a Product Hunt post, an Indie Hackers thread. He went to sleep expecting nothing.</p>
+<p>He woke up to $1,400 in sales.</p>
+<p>Not $140. $1,400.</p>
+<p>He refreshed Stripe three times to make sure it was real. It was real.</p>
+<p>By the end of the month: $8,000. By the end of the year: $150,000.</p>
+<p>From a tool he built for himself over two weekends.</p>
+<hr>
+<h2 id="what-he-understood-that-others-didnt"><a class="header" href="#what-he-understood-that-others-didnt">What He Understood That Others Didn’t</a></h2>
+<p>Tony Dinh talks about three things when he explains the portfolio strategy.</p>
+<p><strong>Distribution is product.</strong> A better product that nobody finds beats a mediocre product with terrible distribution. He learned to launch in the right places — not just his Twitter audience, but Reddit communities, Hacker News, YouTube tutorials, Product Hunt timing. Each channel compounds differently. Some work immediately. Some pay off six months later when a YouTuber discovers your product and makes a video.</p>
+<p><strong>Small is scalable.</strong> Every feature he didn’t build was a maintenance burden that didn’t exist. His products are deliberately small — they do one thing, they do it well, and he resists the temptation to expand them into platforms. “A tool that does one thing is easy to explain, easy to maintain, and easy to sell.”</p>
+<p><strong>Your own pain is your best market research.</strong> Every product he shipped that worked was something he needed himself. Every product that didn’t work was something he built because he thought other people needed it. The gap between “I need this” and “I think others need this” is where most products die.</p>
+<hr>
+<h2 id="the-revenue-now"><a class="header" href="#the-revenue-now">The Revenue Now</a></h2>
+<p>In 2023, Tony Dinh’s products collectively generated over $400,000 in revenue.</p>
+<p>One person. Working from various cities across Southeast Asia. No employees, no investors, no office.</p>
+<p>Six products, each doing its small part. A portfolio of bets that paid off because he kept placing them.</p>
+<p>The Stripe notification that woke him at 3:14 AM in 2020 was a German stranger paying $29 for a Mac app.</p>
+<p>By 2023, strangers were paying him $400,000 a year.</p>
+<p>He still wakes up to Stripe notifications. He never gets tired of reading them.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="sahil-lavingia-the-failed-unicorn-who-found-something-better"><a class="header" href="#sahil-lavingia-the-failed-unicorn-who-found-something-better">Sahil Lavingia: The Failed Unicorn Who Found Something Better</a></h1>
+<p>In January 2019, Sahil Lavingia laid off 75% of his company.</p>
+<p>He had raised $8 million in venture capital. He had 85 employees. He had been on Forbes 30 Under 30. He had a company that by every external measure was succeeding, and by every internal measure was dying.</p>
+<p>The layoffs took a day. The lesson took years.</p>
+<hr>
+<h2 id="the-first-act"><a class="header" href="#the-first-act">The First Act</a></h2>
+<p>Sahil Lavingia was, by any reasonable accounting, a prodigy.</p>
+<p>He built the first iPhone app for Pinterest at nineteen. He was the second employee at Pinterest before it was Pinterest. He left to start his own company, Gumroad, a platform that let creators sell digital products directly to their audiences.</p>
+<p>He raised $1.1 million in a first round. Then $7 million more. He had top-tier investors, prestigious press, the full apparatus of Silicon Valley belief pointed at him.</p>
+<p>He was twenty-two years old.</p>
+<p>He hired. He expanded. He built features. He chased the metrics that venture capital demands: growth, growth, growth, and then more growth after that.</p>
+<p>And then the growth stopped.</p>
+<hr>
+<h2 id="the-dark-year"><a class="header" href="#the-dark-year">The Dark Year</a></h2>
+<p>Gumroad was not failing in the way startups usually fail. People were using it. Creators were selling things on it. Revenue was real.</p>
+<p>But the growth curve had flattened. Venture capital does not reward flatness. Flatness, in that world, is a kind of dying.</p>
+<p>He tried to raise a new round. Investors passed. Thirty of them. He called it “a very humbling experience” in a Medium post that became required reading for every founder who had ever felt the gap between the story they told the world and the reality they lived inside it.</p>
+<p>He laid off the team. He moved back into his parents’ house. He had a company that was generating real revenue with real users and he had, in the logic of Silicon Valley, failed.</p>
+<p>It was the best thing that ever happened to him.</p>
+<hr>
+<h2 id="the-reframe"><a class="header" href="#the-reframe">The Reframe</a></h2>
+<p>Alone with a product, no investors, no employees, no runway pressure, Sahil Lavingia did something unusual: he asked himself what he actually wanted.</p>
+<p>Not what the market wanted. Not what investors wanted. What he wanted.</p>
+<p>The answer surprised him.</p>
+<p>He wanted to build software. He wanted to help creators sell things. He did not want to manage a team of eighty-five people. He did not want to run board meetings. He did not want the company to be a unicorn.</p>
+<p>He wanted it to be sustainable.</p>
+<p>He wrote a Medium post in 2019 titled “Reflecting on My Failure to Build a Billion-Dollar Company.” It got 1.5 million readers. Not because it was a failure story — because it was an honest story, and honest stories are rare enough online that they travel.</p>
+<hr>
+<h2 id="the-pivot-to-sustainable"><a class="header" href="#the-pivot-to-sustainable">The Pivot to Sustainable</a></h2>
+<p>Sahil rebuilt Gumroad as a one-person company.</p>
+<p>He automated what could be automated. He focused development on the things that actually moved the needle for creators. He stopped building features that were impressive to investors and started building features that were useful to sellers.</p>
+<p>He made a radical decision: he would share the financials publicly. Revenue, churn, every number, posted for the world to see. Radical transparency as product. Radical transparency as trust.</p>
+<p>In 2021, Gumroad processed $142 million in payments to creators. One person running it. He made enough to live well. He had time to paint — he had become a serious painter during the dark years — and write, and think.</p>
+<p>The $8 million he’d raised and spent chasing billion-dollar metrics had delivered a company that nearly killed him. The company he rebuilt alone, without pressure, delivered everything he actually wanted.</p>
+<hr>
+<h2 id="what-he-learned"><a class="header" href="#what-he-learned">What He Learned</a></h2>
+<p>“Build a company you want to run, not a company investors want to fund.”</p>
+<p>This is the lesson Sahil Lavingia is most associated with now. It sounds obvious in retrospect. It is almost never obvious in the moment, when the pressure of outside expectations is so total that your own preferences feel like an indulgence you cannot afford.</p>
+<p>He could afford them. He just didn’t know it yet.</p>
+<p>The layoffs in January 2019 were the worst day of his professional life. They were also the day he stopped building someone else’s company and started building his own.</p>
+<hr>
+<h2 id="the-last-thing-1"><a class="header" href="#the-last-thing-1">The Last Thing</a></h2>
+<p>Sahil Lavingia still runs Gumroad.</p>
+<p>He still posts the numbers publicly. He still paints. He hired a small team, eventually — not because he had to, but because he chose to.</p>
+<p>The Forbes 30 Under 30 is framed somewhere he no longer looks at.</p>
+<p>The painting he finished last month is hanging in his living room.</p>
+<p>He knows which one matters more.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="arvid-kahl-the-developer-who-sold-his-saas-and-wrote-the-book-on-how-he-did-it"><a class="header" href="#arvid-kahl-the-developer-who-sold-his-saas-and-wrote-the-book-on-how-he-did-it">Arvid Kahl: The Developer Who Sold His SaaS and Wrote the Book on How He Did It</a></h1>
+<p>The wire transfer confirmed at 11:23 AM on a Tuesday.</p>
+<p>Arvid Kahl had just sold FeedbackPanda — a SaaS he had built with his partner — for an amount he wouldn’t disclose publicly but that was, he has said, “life-changing.”</p>
+<p>He was thirty-five years old. He had been building the company for less than two years.</p>
+<p>He closed his laptop and went for a walk. He did not know what to do with his hands.</p>
+<hr>
+<h2 id="the-problem-that-became-a-product"><a class="header" href="#the-problem-that-became-a-product">The Problem That Became a Product</a></h2>
+<p>FeedbackPanda started as a tool Arvid’s partner needed.</p>
+<p>She was an online English teacher — one of thousands of contractors working for Chinese EdTech companies, providing one-on-one English lessons to Chinese children via video call. The work was good but the administrative burden was crushing: after every lesson, teachers were required to write detailed feedback reports for each student’s parents.</p>
+<p>Fifty lessons a week. Fifty feedback reports. Each one written from scratch.</p>
+<p>She spent hours every week on feedback that the parents barely read. Arvid, watching this, did what developers do: he automated it.</p>
+<p>FeedbackPanda was a template engine. Teachers could save sentence patterns, fill in student-specific details, and generate professional feedback in seconds instead of minutes. The time saving was not incremental — it was transformational. Teachers who had spent three hours a week on feedback now spent fifteen minutes.</p>
+<p>He launched it to the community of online teachers. In the first month, he made $120.</p>
+<p>In the second month, $800.</p>
+<p>In the twelfth month, $30,000.</p>
+<hr>
+<h2 id="the-unexpected-moat"><a class="header" href="#the-unexpected-moat">The Unexpected Moat</a></h2>
+<p>What Arvid Kahl understood — slowly, then completely — was that FeedbackPanda had a moat he hadn’t planned for: community.</p>
+<p>Online English teachers were a tight-knit, self-organized group. They had Facebook groups, forums, referral networks. When one teacher found something that made their job easier, they told ten other teachers. When ten teachers loved it, a hundred followed.</p>
+<p>He did not advertise. He did not run campaigns. He showed up in the communities, helped people, answered questions, and let the product speak through the teachers who used it.</p>
+<p>“The best distribution channel for a B2C SaaS,” he wrote later, “is the community that already exists around the problem you’re solving.”</p>
+<p>He had not created the community. He had found it, built something it needed, and then earned its trust by showing up consistently.</p>
+<hr>
+<h2 id="the-sale"><a class="header" href="#the-sale">The Sale</a></h2>
+<p>When the EdTech market shifted — when the Chinese government cracked down on private tutoring companies in 2021, devastating the industry — Arvid had already sold FeedbackPanda in 2019.</p>
+<p>The timing was lucky. But the decision to sell was deliberate.</p>
+<p>He and his partner had built something real. They were at the point where growing it further would require either raising capital or hiring a team — both of which would change the nature of what they’d built and how they lived. They liked what they’d built. They liked how they lived. They sold.</p>
+<p>The acquiring company could scale it. They would use the proceeds to figure out what came next.</p>
+<hr>
+<h2 id="what-came-next"><a class="header" href="#what-came-next">What Came Next</a></h2>
+<p>What came next was a book.</p>
+<p>Arvid Kahl spent two years writing <em>The Embedded Entrepreneur</em> — a systematic guide to finding, validating, and building products for communities. Then a second book. Then a newsletter, <em>The Bootstrapped Founder</em>, that grew to tens of thousands of readers.</p>
+<p>The books were not passive income in the way people use that phrase dismissively. They were the result of hundreds of hours of writing, editing, thinking, revising. But they were also, once written, assets that generated revenue indefinitely.</p>
+<p>By 2023, between the books, the newsletter, consulting, and speaking, Arvid Kahl was generating meaningful income from his writing alone — having never raised a dollar of venture capital, having built and sold one product and then pivoted entirely to teaching others how to do what he’d done.</p>
+<hr>
+<h2 id="the-lesson-that-travels"><a class="header" href="#the-lesson-that-travels">The Lesson That Travels</a></h2>
+<p>Arvid Kahl’s core teaching is deceptively simple: before you build, find the community.</p>
+<p>Not the market. The community.</p>
+<p>A market is an abstraction. A community is people who already talk to each other, already have opinions, already have problems they’re actively trying to solve. Build for them and they will tell each other. Build for a market and you’ll spend everything you have on acquisition.</p>
+<p>He found the community of online teachers because his partner was one of them. He didn’t have to research the pain. He lived next to it.</p>
+<p>That proximity — that inside knowledge — was the unfair advantage that no amount of money could replicate.</p>
+<hr>
+<h2 id="the-wire-transfer"><a class="header" href="#the-wire-transfer">The Wire Transfer</a></h2>
+<p>The wire transfer that confirmed at 11:23 AM on a Tuesday was the end of one story and the beginning of another.</p>
+<p>He had built something real with someone he loved and sold it before the market that made it possible disappeared entirely.</p>
+<p>He went for a walk. He did not know what to do with his hands.</p>
+<p>Eventually he went home, opened his laptop, and started writing.</p>
+<p>Some people don’t know when to stop. Arvid Kahl knew exactly when to start again.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="justin-welsh-the-burned-out-vp-who-built-a-5m-one-person-business"><a class="header" href="#justin-welsh-the-burned-out-vp-who-built-a-5m-one-person-business">Justin Welsh: The Burned-Out VP Who Built a $5M One-Person Business</a></h1>
+<p>In October 2019, Justin Welsh had a panic attack in a WeWork bathroom in Los Angeles.</p>
+<p>He was the SVP of Sales at a healthcare startup. He was responsible for a team of fifty people and a revenue number in the tens of millions. He was, by the metrics his industry used, successful.</p>
+<p>He was also done.</p>
+<p>He sat on the bathroom floor for twenty minutes, texted his wife that he wasn’t okay, and drove home. He never went back to the office.</p>
+<hr>
+<h2 id="before-the-burnout"><a class="header" href="#before-the-burnout">Before the Burnout</a></h2>
+<p>Justin Welsh had spent fifteen years building other people’s companies.</p>
+<p>He was good at it — genuinely good, not just-good-enough good. He had a gift for sales, for building teams, for the particular blend of pressure and support that turns individual salespeople into systems that compound. He had climbed. He had earned. He had the LinkedIn profile that other people screenshot as an example of what to work toward.</p>
+<p>He had also, somewhere in the grinding accumulation of seventy-hour weeks, entirely lost himself.</p>
+<p>His identity had become his title. His worth had become his quota. When the quota was hit he felt briefly, hollowly good. When it wasn’t, he felt like nothing.</p>
+<p>The panic attack in the WeWork bathroom was the end of a story he had been telling himself for fifteen years. The story was: more is more. Work harder, earn more, achieve more, be more.</p>
+<p>The bathroom floor was where that story ended.</p>
+<hr>
+<h2 id="the-bet-on-content"><a class="header" href="#the-bet-on-content">The Bet on Content</a></h2>
+<p>Justin Welsh made a specific bet in early 2020, while he was recovering and figuring out what came next: he would build an audience on LinkedIn.</p>
+<p>Not for any particular reason at first. He just had things to say — about sales, about burnout, about the gap between what corporate success looks like and what it feels like. He thought maybe a few thousand people in sales might find it useful.</p>
+<p>He started posting. Monday through Friday, one post per day. Short, specific, honest. Not inspirational content — reflective content. The difference between “here’s how to be great” and “here’s what I got wrong and what I actually learned from it.”</p>
+<p>The growth was slow at first. Then it wasn’t.</p>
+<p>LinkedIn’s algorithm rewards consistency the way almost no other platform does. Six months of daily posting had built him 50,000 followers. A year in: 150,000.</p>
+<p>At 300,000 followers, he launched his first product.</p>
+<hr>
+<h2 id="the-150-course"><a class="header" href="#the-150-course">The $150 Course</a></h2>
+<p>The course was called “The LinkedIn Operating System.” It taught people to build LinkedIn audiences the way he had — systematically, sustainably, without burning out.</p>
+<p>Price: $150.</p>
+<p>He launched to his email list on a Tuesday. He made $100,000 in the first week.</p>
+<p>He stared at the number for a long time.</p>
+<p>This is the moment most people describe as the turning point. Justin Welsh describes it differently. “The money was validating,” he says. “But the emails were the thing. Hundreds of people writing to say that the framework had changed how they thought about their careers. That was the thing.”</p>
+<p>The course became a business. The business became multiple courses. The courses became a newsletter, then a community, then a second newsletter. By 2023, Justin Welsh was generating over $5 million per year as a one-person business.</p>
+<hr>
+<h2 id="the-architecture-of-one"><a class="header" href="#the-architecture-of-one">The Architecture of One</a></h2>
+<p>Justin Welsh is precise about what makes the solo model work.</p>
+<p><strong>Leverage over labor.</strong> A course taught once to thousands earns more per hour than any consulting arrangement. Writing an email newsletter that goes to 200,000 people is the same effort as writing one that goes to 20. The internet makes your work infinitely replicable once it exists. The goal is to create things that exist.</p>
+<p><strong>The flywheel.</strong> Content builds audience. Audience buys products. Products generate revenue. Revenue buys time. Time creates content. Once the flywheel is spinning, it is very hard to stop.</p>
+<p><strong>Saying no.</strong> The most counterintuitive lesson from scaling a one-person business is that growth requires elimination. Every speaking engagement he doesn’t take is a week he has to write. Every partnership he declines is a month he doesn’t spend managing someone else’s expectations. The discipline of the solo model is the discipline of refusal.</p>
+<hr>
+<h2 id="what-he-tells-people-now"><a class="header" href="#what-he-tells-people-now">What He Tells People Now</a></h2>
+<p>Justin Welsh is frequently asked how to replicate what he did.</p>
+<p>His answer is always the same: pick one platform, post every day for a year, be specific about what you know, be honest about what you got wrong.</p>
+<p>Most people don’t do this because it sounds too simple. He understands. He spent fifteen years believing that more complicated meant more valuable.</p>
+<p>The WeWork bathroom floor disagreed.</p>
+<hr>
+<h2 id="the-last-thing-2"><a class="header" href="#the-last-thing-2">The Last Thing</a></h2>
+<p>In October 2019, Justin Welsh sat on a bathroom floor in Los Angeles and texted his wife that he wasn’t okay.</p>
+<p>In October 2023, he was running a $5 million business from his home office, working four days a week, taking Fridays off to be present with his family.</p>
+<p>He still posts on LinkedIn every day. Not because he has to.</p>
+<p>Because it turns out that the thing that burned him out was not the work. It was the work in service of someone else’s goals.</p>
+<p>The same hours, directed toward his own, felt entirely different.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="nathan-barry-the-designer-who-built-convertkit-by-ignoring-every-rule"><a class="header" href="#nathan-barry-the-designer-who-built-convertkit-by-ignoring-every-rule">Nathan Barry: The Designer Who Built ConvertKit by Ignoring Every Rule</a></h1>
+<p>In 2013, Nathan Barry set a goal: make $5,000 in one month from information products.</p>
+<p>He did it. He made $12,000.</p>
+<p>Then he spent the next three years building a company that almost killed him financially, before it became the thing that made him: ConvertKit, an email marketing platform for creators that now processes over $30 million in annual recurring revenue.</p>
+<p>The distance between $12,000 in a month and $30 million a year is not a straight line. It is a series of wrong turns navigated by someone too stubborn to stop.</p>
+<hr>
+<h2 id="the-first-chapter"><a class="header" href="#the-first-chapter">The First Chapter</a></h2>
+<p>Nathan Barry was a designer. A good one — he had worked on apps, consulted for startups, built iOS apps that did well. He understood interfaces, he understood user experience, he understood the gap between what software looked like and what it felt like to use.</p>
+<p>In 2012, he wrote a book about app design. He sold it himself, directly to his audience, without a publisher. He made $12,000 in the first month.</p>
+<p>This was revelatory.</p>
+<p>Not the money, exactly — though the money was real. The revelation was structural: he had created something once and sold it many times. His effort was fixed. His revenue was not.</p>
+<p>He wrote two more books. They sold well. He was making a comfortable living as a one-person information product creator when he made the decision that would nearly ruin him.</p>
+<p>He decided to build software.</p>
+<hr>
+<h2 id="the-bet"><a class="header" href="#the-bet">The Bet</a></h2>
+<p>The bet was ConvertKit: an email marketing platform designed specifically for bloggers and creators.</p>
+<p>The market already had players — MailChimp, AWeber, Constant Contact. They were generic tools for generic businesses. Nathan Barry believed there was a product to be built for the specific needs of people who taught things online, who wrote newsletters, who built audiences as their primary business model.</p>
+<p>He started building in 2013.</p>
+<p>In February 2014, he had $1,500 in monthly recurring revenue.</p>
+<p>At that rate, the business would take years to become meaningful. He had spent money building it. He had a family. He had obligations.</p>
+<p>He almost shut it down.</p>
+<hr>
+<h2 id="the-public-commitment"><a class="header" href="#the-public-commitment">The Public Commitment</a></h2>
+<p>Instead of shutting it down, Nathan Barry did something that sounds either brave or reckless depending on your risk tolerance: he posted publicly that he would grow ConvertKit to $5,000/month in MRR or shut it down.</p>
+<p>He set a deadline. He told the internet.</p>
+<p>This is a forcing function disguised as accountability. By making the commitment public, he made quitting more costly than it would have been otherwise — quitting now meant explaining failure to the people who had been watching.</p>
+<p>He got to $5,000/month.</p>
+<p>Then he set $10,000/month as the new target. Made it.</p>
+<p>Then $50,000. Made it.</p>
+<p>Then something changed.</p>
+<hr>
+<h2 id="the-crossing"><a class="header" href="#the-crossing">The Crossing</a></h2>
+<p>The thing that changed was Convertkit finding its people.</p>
+<p>The blogger and creator community was not a market that Madison Avenue had identified and targeted. It was a scattered, self-organized collection of people who were figuring out how to make money from the audiences they’d built. They talked to each other. They recommended tools to each other.</p>
+<p>When ConvertKit started appearing in the recommendations of prominent bloggers — when Pat Flynn at Smart Passive Income mentioned it, when other creators with large audiences endorsed it — the growth changed character.</p>
+<p>It was no longer grinding. It was compounding.</p>
+<p>By 2016, ConvertKit was doing $1 million in annual recurring revenue. By 2017, $2 million. By 2020, $20 million.</p>
+<p>Nathan Barry had not changed the product fundamentally. He had not cracked a new insight or pivoted to a new market. He had found the right people, built their trust slowly, and let them tell each other.</p>
+<hr>
+<h2 id="what-patience-looks-like"><a class="header" href="#what-patience-looks-like">What Patience Looks Like</a></h2>
+<p>Nathan Barry is frequently cited in conversations about the “long game” in building software.</p>
+<p>He spent years building something that looked, by external metrics, like it wasn’t working. He had a product that competed with well-funded incumbents. He had an audience but not a viral growth engine. He had conviction but not evidence — not yet.</p>
+<p>What he had was a specific point of view about who he was building for and why the existing tools failed them. He held that point of view when it would have been easier to build something more generic for a larger market.</p>
+<p>The creators vindicated him. Not because he was lucky — because he was right.</p>
+<hr>
+<h2 id="the-last-thing-3"><a class="header" href="#the-last-thing-3">The Last Thing</a></h2>
+<p>Nathan Barry still runs ConvertKit. He took the company partially remote before it was fashionable. He is candid about the near-failures, the $1,500/month moments, the times he almost quit.</p>
+<p>He tells the story of building it not because it’s a success story in the traditional sense. He tells it because it’s a patience story — a story about the gap between having a real insight and having the evidence to prove it.</p>
+<p>“Everyone builds for growth,” he has said. “I built for the long game.”</p>
+<p>The long game paid out.</p>
+<p>It usually does, for the people willing to stay in it.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="harry-dry-the-copywriter-who-studied-everyone-elses-marketing-so-you-dont-have-to"><a class="header" href="#harry-dry-the-copywriter-who-studied-everyone-elses-marketing-so-you-dont-have-to">Harry Dry: The Copywriter Who Studied Everyone Else’s Marketing So You Don’t Have To</a></h1>
+<p>Harry Dry launched Marketing Examples with no email list, no social following, no budget.</p>
+<p>He had a Notion document and an idea: what if someone collected the best real-world examples of great marketing copy and explained, specifically, why each one worked?</p>
+<p>Not principles. Not frameworks. Examples. Actual screenshots, actual words, actual reasons.</p>
+<p>He launched in 2019. By 2023, Marketing Examples had 120,000 subscribers and was making £20,000 per month from a single, small audience.</p>
+<hr>
+<h2 id="the-insight"><a class="header" href="#the-insight">The Insight</a></h2>
+<p>Harry Dry is British, obsessive, and specific in a way that makes him somewhat unusual in the marketing space, where vagueness is often mistaken for depth.</p>
+<p>His insight was simple: marketing education was full of principles and empty of evidence. Everyone taught “write good copy” and almost nobody showed you, concretely, what good copy looked like and why it worked.</p>
+<p>He would be the person who showed you.</p>
+<p>He spent months before launching, curating examples. Not writing theory — curating. Finding ads, landing pages, emails, tweets that had actually worked, and building a hypothesis about why.</p>
+<p>The first issue was about the headline of a 1920s Rolls-Royce advertisement. The second was about how Dropbox’s referral program copy drove viral growth. Each one: a specific example, a specific analysis, a specific takeaway.</p>
+<p>It was not novel, exactly. But it was useful in a way that most marketing content wasn’t.</p>
+<hr>
+<h2 id="the-growth-that-wasnt-growth"><a class="header" href="#the-growth-that-wasnt-growth">The Growth That Wasn’t Growth</a></h2>
+<p>Marketing Examples grew slowly.</p>
+<p>In the first year, Harry Dry’s primary distribution was cold outreach — direct messages to marketing professionals, founders, designers who might find the content useful. One by one. Manually.</p>
+<p>This is not a scalable strategy. It is, however, a strategy that works when you have zero audience and zero budget.</p>
+<p>“Most people are waiting for permission to do the unscalable thing,” he has said. “The unscalable thing is the only thing that works when you’re starting from zero.”</p>
+<p>He sent hundreds of cold messages. Most were ignored. Some were answered. A handful of those became evangelists — people who forwarded the newsletter to their teams, who mentioned it in podcasts, who included it in their own newsletters.</p>
+<p>One mention from a larger newsletter would add a thousand subscribers. One retweet from the right account would add five hundred.</p>
+<p>Slow growth, punctuated by spikes. The spikes were caused by the quality. The quality was caused by the obsessive curation.</p>
+<hr>
+<h2 id="what-he-built-and-didnt-build"><a class="header" href="#what-he-built-and-didnt-build">What He Built (And Didn’t Build)</a></h2>
+<p>Marketing Examples has never had:</p>
+<ul>
+<li>A team</li>
+<li>A podcast</li>
+<li>A course (until recently, and then only one)</li>
+<li>A community platform</li>
+<li>An advertising budget</li>
+<li>A social media strategy beyond Twitter</li>
+</ul>
+<p>It has always had:</p>
+<ul>
+<li>A newsletter</li>
+<li>A website</li>
+<li>One person who reads everything about marketing and picks the best examples</li>
+</ul>
+<p>The simplicity is not accidental. Harry Dry made a decision early that he would not chase breadth. He would go deep on one thing — the best marketing examples, explained clearly — and do it consistently, forever.</p>
+<p>Every time the pressure appeared to add a YouTube channel or a community or a premium tier, he asked one question: does this make the core thing better, or does it distract from it?</p>
+<p>Most ideas didn’t survive the question.</p>
+<hr>
+<h2 id="the-copy-he-keeps-coming-back-to"><a class="header" href="#the-copy-he-keeps-coming-back-to">The Copy He Keeps Coming Back To</a></h2>
+<p>Harry Dry’s own work — the newsletter itself — is a case study in the principles he teaches.</p>
+<p>The subject lines are specific: “Why this 1970s Volkswagen ad is still the best car ad ever written” beats “Marketing tips for this week.”</p>
+<p>The headlines lead with the example, not the lesson: “How Basecamp grew to $100M ARR with one email sequence” is a story. “Email marketing best practices” is a category.</p>
+<p>The writing is short. Each issue is readable in under five minutes. He has said that he deletes more words than he publishes — that the hardest part of the job is making the complexity small enough to fit.</p>
+<p>“If I can’t explain it simply,” he says, “I don’t understand it well enough to teach it.”</p>
+<hr>
+<h2 id="the-number-3"><a class="header" href="#the-number-3">The Number</a></h2>
+<p>£20,000 per month from one newsletter. No team. A website, an email platform, and years of obsessive curation.</p>
+<p>The people who subscribe to Marketing Examples subscribe because Harry Dry understood something most content creators don’t: depth beats breadth, specificity beats principle, showing beats telling.</p>
+<p>He learned this by studying a hundred years of the best marketing copy ever written.</p>
+<p>Then he wrote that down, simply, so you could learn it in five minutes.</p>
+<p>That’s the whole thing. And it turned out to be worth quite a lot.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="jon-yongfook-the-designer-who-built-an-api-for-screenshots"><a class="header" href="#jon-yongfook-the-designer-who-built-an-api-for-screenshots">Jon Yongfook: The Designer Who Built an API for Screenshots</a></h1>
+<p>Jon Yongfook had failed seven times before Bannerbear.</p>
+<p>Not metaphorical failures. Seven actual products, built, launched, and abandoned over eight years. Some made a little money. Most made none. All of them taught him something he would eventually use.</p>
+<p>The eighth product changed his life. He nearly didn’t build it.</p>
+<hr>
+<h2 id="the-accumulated-weight-of-failure"><a class="header" href="#the-accumulated-weight-of-failure">The Accumulated Weight of Failure</a></h2>
+<p>Jon Yongfook is Japanese-British. He grew up in the UK, studied design, moved to Tokyo, built things, moved to Singapore, built more things.</p>
+<p>Each product was real work. Real months of effort. Real launches on Hacker News or Product Hunt, with real user feedback and real revenue numbers that started with zero and often ended close to it.</p>
+<p>What kept him going was not optimism exactly — he had burned through most of that by product number four. What kept him going was something more durable: curiosity about the craft. He genuinely liked building things. He liked the problem-solving, the design decisions, the moment when something that had been broken started working.</p>
+<p>The business part was frustrating. The building part was not.</p>
+<p>“I kept going not because I believed the next one would work,” he said in an interview. “I kept going because I kept finding new problems I wanted to solve.”</p>
+<hr>
+<h2 id="the-problem-he-kept-running-into"><a class="header" href="#the-problem-he-kept-running-into">The Problem He Kept Running Into</a></h2>
+<p>Bannerbear started with a repetitive annoyance.</p>
+<p>Jon was building a travel app. The app needed to auto-generate social media images — open graph images, Twitter cards, Facebook previews. For every piece of content, the app needed to create a custom image with the right text and visuals overlaid.</p>
+<p>He built this image generation system. It took weeks. It was complex. It worked.</p>
+<p>He thought: other people must be doing this constantly. Other developers must be building this same system, over and over, for different products. There must be a better way.</p>
+<p>He built the better way and called it Bannerbear.</p>
+<p>Bannerbear was an API. Developers could send it a template and some data, and it would return a generated image. That’s it. One thing, done well.</p>
+<hr>
+<h2 id="the-launch-nobody-expected"><a class="header" href="#the-launch-nobody-expected">The Launch Nobody Expected</a></h2>
+<p>He launched Bannerbear on Hacker News with a brief post: “I built an API for auto-generating social images. Feedback welcome.”</p>
+<p>He had launched on Hacker News before. Usually he got a handful of upvotes and some constructive criticism before the thread disappeared.</p>
+<p>This time it hit the front page.</p>
+<p>He watched the signups come in over the following hours — not a flood, but a steady stream of developers who had exactly the problem he was solving and had been solving it the hard way.</p>
+<p>First month: $800 in MRR.</p>
+<p>Second month: $2,200.</p>
+<p>Sixth month: $10,000.</p>
+<p>He had never crossed $10,000 MRR with any of his previous products. He crossed it on product number eight.</p>
+<hr>
+<h2 id="what-eight-failures-taught-him"><a class="header" href="#what-eight-failures-taught-him">What Eight Failures Taught Him</a></h2>
+<p>Jon Yongfook talks about failure differently from most founders who have had it.</p>
+<p>He doesn’t talk about it as a dark period you push through. He talks about it as an education you pay for with time instead of money.</p>
+<p>Each of his seven previous products taught him something specific: Product 1 taught him that “build it and they will come” is false. Product 3 taught him that B2C without a distribution strategy is a dead end. Product 5 taught him that charging from day one is better than building a free user base and hoping to monetize later. Product 6 taught him that APIs are more defensible than consumer apps because the switching cost is higher.</p>
+<p>He applied every lesson to Bannerbear.</p>
+<p>“By the time I built the thing that worked,” he said, “I had already solved most of the non-technical problems. The technical ones were the easy part.”</p>
+<hr>
+<h2 id="the-life-he-built"><a class="header" href="#the-life-he-built">The Life He Built</a></h2>
+<p>Bannerbear became a lifestyle business before it became a SaaS success story — but both things are true.</p>
+<p>Jon ran it from Bali for a while, then from Tokyo, then from various cities. He hired one contractor. He kept the product focused. He raised prices methodically as the value became clear.</p>
+<p>By 2022, Bannerbear was generating over $300,000 in annual recurring revenue.</p>
+<p>One person. An API. A problem he kept running into until he finally solved it.</p>
+<hr>
+<h2 id="the-last-thing-4"><a class="header" href="#the-last-thing-4">The Last Thing</a></h2>
+<p>Seven failures and one product that worked. The math sounds bad until you understand what the seven failures were: they were the tuition for the education that made product eight possible.</p>
+<p>Jon Yongfook did not get lucky on product eight. He got skilled, slowly, on products one through seven, and then applied that skill to a real problem at the right time.</p>
+<p>The eighth attempt is not the same as the first. It carries everything the first seven taught.</p>
+<p>That’s why founders who keep going find it eventually. They’re not playing the same game each time. They’re playing a different game with better equipment.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="courtland-allen-the-developer-who-turned-founder-stories-into-a-10m-acquisition"><a class="header" href="#courtland-allen-the-developer-who-turned-founder-stories-into-a-10m-acquisition">Courtland Allen: The Developer Who Turned Founder Stories Into a $10M Acquisition</a></h1>
+<p>In 2017, Courtland Allen was a software engineer with an idea that everyone told him was too niche.</p>
+<p>He wanted to build a community for bootstrapped founders — the people who built profitable software businesses without venture capital, without a co-founder, sometimes without an office.</p>
+<p>“That’s a very small audience,” people told him.</p>
+<p>He launched it anyway. Indie Hackers went live in August 2016. By June 2017, Stripe had acquired it.</p>
+<p>The time between “small audience” and acquisition offer: eleven months.</p>
+<hr>
+<h2 id="the-interview-that-became-a-product"><a class="header" href="#the-interview-that-became-a-product">The Interview That Became a Product</a></h2>
+<p>Courtland Allen was building Indie Hackers on the side while working his day job.</p>
+<p>The product was simple: interviews with founders of profitable online businesses, sharing their exact revenue numbers, their acquisition strategies, their biggest mistakes. Real numbers. Real honesty. No PR polish.</p>
+<p>He knew there was appetite for this because he was the appetite for it. He was a developer who wanted to start a business but couldn’t find the kind of raw, specific information that would help him do it. The success content was either too abstract (“just work hard and believe in yourself”) or too venture-capital-centric (Series A, PMF, burn rate).</p>
+<p>He wanted to know how someone with no funding and no team had made $8,000/month from a niche software product. He wanted the actual how.</p>
+<p>So he built the place where founders answered that question.</p>
+<hr>
+<h2 id="the-unexpected-scale"><a class="header" href="#the-unexpected-scale">The Unexpected Scale</a></h2>
+<p>The interviews got traction quickly, for a reason Courtland hadn’t fully anticipated: the founders he interviewed wanted to be found.</p>
+<p>These were people who had built something real and had no mechanism to reach potential customers, employees, or collaborators. Being featured on Indie Hackers was distribution. It brought them attention they wouldn’t have gotten otherwise.</p>
+<p>So the founders promoted the interviews. And the founders’ audiences — other people like them, developers and designers and creators who wanted to see themselves in these stories — became the community.</p>
+<p>Within months, the forum portion of Indie Hackers was more active than the interviews. Thousands of people were sharing their numbers, asking questions, helping each other debug their positioning, celebrating each other’s milestones.</p>
+<p>The community had become self-sustaining in a way that most communities never achieve.</p>
+<hr>
+<h2 id="the-stripe-call"><a class="header" href="#the-stripe-call">The Stripe Call</a></h2>
+<p>Courtland Allen has been careful about what he shares of the acquisition conversation.</p>
+<p>What he has said: Stripe reached out. They saw Indie Hackers as aligned with their mission — helping the internet economy grow, supporting the founders who were the building blocks of that economy.</p>
+<p>The acquisition terms were undisclosed. Courtland joined Stripe as a full-time employee and continued running Indie Hackers as an autonomous product within Stripe.</p>
+<p>He did not have to change what he was building. He just no longer had to worry about the business model.</p>
+<hr>
+<h2 id="what-he-built-and-why-it-lasted"><a class="header" href="#what-he-built-and-why-it-lasted">What He Built and Why It Lasted</a></h2>
+<p>Indie Hackers lasted because it was useful in a specific, ongoing way.</p>
+<p>Not useful once — useful every week. Every week there were new interviews, new forum discussions, new numbers shared, new problems solved. The community had created a flywheel: the more honest information shared, the more founders it attracted, the more information they contributed.</p>
+<p>Courtland had built, essentially, a content moat. Not because the content was locked away, but because the community that created it was self-perpetuating.</p>
+<p>“A community is not a content strategy,” he has said. “It’s a commitment. You’re not just building a product. You’re building a shared space that people feel ownership over.”</p>
+<p>The founders on Indie Hackers feel ownership. They post their numbers, share their failures, give feedback freely. That sense of ownership — that the community belongs to them, not to a faceless platform — is why it survived and grew where other communities stagnated.</p>
+<hr>
+<h2 id="the-last-thing-5"><a class="header" href="#the-last-thing-5">The Last Thing</a></h2>
+<p>Courtland Allen built a community that was “too niche” by answering questions he had himself.</p>
+<p>He wanted to know how bootstrapped founders made money. He interviewed them until he had a comprehensive answer. And the people who had the same question found the answers and stayed.</p>
+<p>Eleven months from launch to acquisition. Not because he timed the market or executed a perfect strategy, but because he built something useful for people like himself, and it turned out there were more people like himself than the market research would have suggested.</p>
+<p>There usually are.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="rob-walling-the-developer-who-chose-boring-success-over-exciting-failure"><a class="header" href="#rob-walling-the-developer-who-chose-boring-success-over-exciting-failure">Rob Walling: The Developer Who Chose Boring Success Over Exciting Failure</a></h1>
+<p>In 2005, Rob Walling made a list.</p>
+<p>On one side: the things he had to do to become the kind of developer-founder he wanted to be. On the other side: the things he was currently doing, which had nothing to do with the first list.</p>
+<p>The gap between the two lists was so large that he kept the paper on his desk for six months as a reminder that something had to change.</p>
+<p>He has been changing it, systematically and without drama, ever since.</p>
+<hr>
+<h2 id="the-anti-narrative"><a class="header" href="#the-anti-narrative">The Anti-Narrative</a></h2>
+<p>Rob Walling’s story does not have a single dramatic turning point. There is no pivot that saved everything, no investor meeting that changed his life, no viral launch that made the revenue chart go vertical overnight.</p>
+<p>This is not a flaw in the story. It is the story.</p>
+<p>He has spent twenty years building and acquiring small, boring, profitable software businesses. Businesses that solve specific problems for specific people who pay monthly because the software saves them time or money. No press coverage, no TED talks, no hockey stick.</p>
+<p>Just recurring revenue, growing slowly, compounding over time.</p>
+<p>“Most founders want to build the next big thing,” he has said. “I wanted to build something that worked.”</p>
+<hr>
+<h2 id="the-acquisition-model"><a class="header" href="#the-acquisition-model">The Acquisition Model</a></h2>
+<p>Rob Walling’s early insight was that building from scratch is only one way to own a software business.</p>
+<p>He started acquiring small SaaS products — products that were making $500/month or $2,000/month and whose owners had moved on to other things. He would buy them for a small multiple of their monthly revenue, improve them, and grow them.</p>
+<p>This was not glamorous. Acquiring a product for $8,000 that made $800/month was not a story anyone wanted to write about.</p>
+<p>It was, however, profitable.</p>
+<p>He learned the mechanics of SaaS businesses — churn rates, pricing, customer acquisition costs, the specific ways small products fail — by owning and operating them. Not reading about them. Operating them.</p>
+<p>By the time he built Drip, his email marketing automation platform, he had accumulated years of practical knowledge that no accelerator program teaches.</p>
+<hr>
+<h2 id="drip"><a class="header" href="#drip">Drip</a></h2>
+<p>Drip started as a simple email widget — a pop-up that captured email addresses on websites.</p>
+<p>It was not particularly innovative. It was, however, well-built and easy to use. And when email marketing automation platforms were expensive and complex, a tool that let small businesses automate their sequences simply was genuinely useful.</p>
+<p>Rob grew it slowly. He acquired customers methodically. He raised prices when the value justified it. He avoided the temptation to add features that would impress investors but confuse users.</p>
+<p>In 2016, Leadpages acquired Drip for an undisclosed amount. Rob Walling has not disclosed the figure, but public reporting suggested it was in the eight figures.</p>
+<p>He was not surprised that it sold. He had built it to be sellable — clear revenue, clear value proposition, clear unit economics.</p>
+<hr>
+<h2 id="tinyseed"><a class="header" href="#tinyseed">TinySeed</a></h2>
+<p>After the Drip acquisition, Rob Walling did what he does: he looked at the list of things he wanted to do and figured out the gap.</p>
+<p>He co-founded TinySeed — a startup accelerator for bootstrapped or lightly-funded SaaS founders. Not a venture capital fund. A program designed for the founders who would never fit the VC model: the ones building $10 million ARR businesses instead of $100 million ones, the ones who wanted to own their companies and their time.</p>
+<p>TinySeed became the institutional version of the philosophy he had been living for twenty years.</p>
+<hr>
+<h2 id="the-boring-power-of-compounding"><a class="header" href="#the-boring-power-of-compounding">The Boring Power of Compounding</a></h2>
+<p>Rob Walling has a podcast, Startups for the Rest of Us, that he has been recording weekly since 2010. Over 700 episodes. Tens of thousands of listeners every week.</p>
+<p>He did not make the podcast to become famous. He made it because there was no resource that spoke to the kind of founder he was — the one building a small, sustainable software business without venture capital, without a co-founder network, without the language and frameworks that Silicon Valley had developed for a different kind of company.</p>
+<p>He made it because he would have listened to it.</p>
+<p>Sixteen years later, it is the longest-running podcast about bootstrapped software startups in the world.</p>
+<p>Not because it went viral. Because he recorded it every week, and compounding eventually does what compounding does.</p>
+<hr>
+<h2 id="the-last-thing-6"><a class="header" href="#the-last-thing-6">The Last Thing</a></h2>
+<p>The list Rob Walling kept on his desk in 2005 is long gone.</p>
+<p>What he built in the two decades since is not one dramatic success but a hundred small ones. A body of work. A philosophy practiced in public. A community of founders who found in his story permission to build differently.</p>
+<p>“The point is not to be the next billion-dollar company,” he tells founders. “The point is to build something real that you control, that makes your life what you want it to be.”</p>
+<p>He has done this. Systematically. Without drama.</p>
+<p>That is harder than it sounds.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="tibo-louis-lucas-the-frenchman-who-built-in-public-until-the-internet-paid-attention"><a class="header" href="#tibo-louis-lucas-the-frenchman-who-built-in-public-until-the-internet-paid-attention">Tibo Louis-Lucas: The Frenchman Who Built in Public Until the Internet Paid Attention</a></h1>
+<p>Tibo Louis-Lucas posted every day for 365 days before anything significant happened.</p>
+<p>He was building TweetHunter — a Twitter growth tool — with his co-founder. He was also building an audience on Twitter, documenting the process publicly: the revenue numbers, the feature decisions, the arguments he and his co-founder had about product direction.</p>
+<p>On day one, he had 800 followers.</p>
+<p>On day 365, he had 60,000.</p>
+<p>By the time he sold TweetHunter eighteen months later, the product was generating $1.6 million in annual recurring revenue.</p>
+<p>The audience had become the distribution. The distribution had become the business.</p>
+<hr>
+<h2 id="the-accidental-discovery"><a class="header" href="#the-accidental-discovery">The Accidental Discovery</a></h2>
+<p>Tibo Louis-Lucas did not plan to become a build-in-public creator.</p>
+<p>He planned to build a product that made money.</p>
+<p>The building-in-public started because he was frustrated. He had ideas. He had technical skills. He had launched things before that went nowhere. He couldn’t understand why some products found audiences and others didn’t.</p>
+<p>So he decided to document everything — the thinking, the decisions, the pivots — in the hope that someone who knew what he was doing wrong would tell him.</p>
+<p>Someone did. Many someones did.</p>
+<p>The feedback was real and specific in a way that private customer interviews rarely are, because it came from people who were watching the whole picture — not just responding to a targeted question but reacting to the full story.</p>
+<p>He started building differently because people watching told him where he was wrong.</p>
+<hr>
+<h2 id="tweethunter"><a class="header" href="#tweethunter">TweetHunter</a></h2>
+<p>TweetHunter was built to solve the problem that Tibo and his co-founder Loic Lannelongue had themselves: growing on Twitter was opaque and slow.</p>
+<p>They built tools to analyze which tweets performed, to find viral tweet formats, to schedule content, to track follower growth. They built it for themselves, launched it to the audience Tibo had built, and priced it at $19/month.</p>
+<p>First month: $8,000 MRR.</p>
+<p>They had validated the product in the market they had built around themselves.</p>
+<p>By month six: $50,000 MRR.</p>
+<p>By month twelve: $130,000 MRR.</p>
+<hr>
+<h2 id="the-acquisition"><a class="header" href="#the-acquisition">The Acquisition</a></h2>
+<p>In 2022, Taplio and TweetHunter were acquired by Lemlist for $4 million.</p>
+<p>Tibo was twenty-six years old.</p>
+<p>He stayed on after the acquisition to continue developing the product. He kept posting on Twitter. He kept building in public.</p>
+<p>“The acquisition changed my financial life,” he said. “It didn’t change how I work, which is the part I actually like.”</p>
+<hr>
+<h2 id="what-build-in-public-actually-means"><a class="header" href="#what-build-in-public-actually-means">What Build-in-Public Actually Means</a></h2>
+<p>People misunderstand build-in-public as marketing — as posting revenue screenshots for attention.</p>
+<p>Tibo Louis-Lucas’s version of it is different. It is accountability, feedback loop, and distribution rolled into one practice.</p>
+<p><strong>Accountability:</strong> When you’ve told 60,000 people what you’re building and why, the cost of quitting is higher than it would be otherwise. This is not peer pressure in the negative sense — it’s a commitment device that works.</p>
+<p><strong>Feedback loop:</strong> The people who follow your build will tell you when something is wrong faster and more honestly than any user interview. Because they’re not being asked — they’re reacting.</p>
+<p><strong>Distribution:</strong> When you launch to an audience that has watched you build, they feel ownership over the outcome. They want you to succeed because they’ve been part of the story. This translates into word-of-mouth that no ad budget can replicate.</p>
+<hr>
+<h2 id="the-last-thing-7"><a class="header" href="#the-last-thing-7">The Last Thing</a></h2>
+<p>365 days. 800 followers to 60,000. A product from zero to $1.6 million ARR.</p>
+<p>Tibo Louis-Lucas did not build something secretly and then reveal it.</p>
+<p>He built something publicly and let the building be the story.</p>
+<p>The internet rewarded the honesty. Not immediately. Not on day 47, when the numbers were embarrassing and the path forward wasn’t clear. But eventually, and then all at once.</p>
+<p>That’s how compounding works. It’s boring until it isn’t.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="anne-laure-le-cunff-the-google-manager-who-chose-her-mind-over-her-career"><a class="header" href="#anne-laure-le-cunff-the-google-manager-who-chose-her-mind-over-her-career">Anne-Laure Le Cunff: The Google Manager Who Chose Her Mind Over Her Career</a></h1>
+<p>Anne-Laure Le Cunff left Google on a Thursday.</p>
+<p>She had a good title, a good salary, and a growing sense that she was spending her best hours building something she didn’t believe in.</p>
+<p>She had been reading neuroscience research in her spare time. Not casually — obsessively. She read papers. She took notes. She wrote things down not because anyone asked her to but because the act of writing made the thinking stick.</p>
+<p>She decided to turn the writing into a publication. She had no subscribers, no editor, no monetization plan.</p>
+<p>She called it Ness Labs.</p>
+<hr>
+<h2 id="the-overlap"><a class="header" href="#the-overlap">The Overlap</a></h2>
+<p>Ness Labs started as a personal experiment in learning in public.</p>
+<p>Anne-Laure Le Cunff had been developing frameworks for herself — ways to take notes, ways to manage attention, ways to learn new things without burning out. She had a background in neuroscience (she was completing a PhD) and a background in tech (she had worked at Google on product teams). The intersection was unusual enough to be interesting.</p>
+<p>She wrote about the neuroscience of habits, the psychology of creativity, the cognitive costs of context switching. She wrote for the version of herself that had been running on caffeine and willpower at Google, wishing someone would give her a user manual for her own brain.</p>
+<p>The first few posts went nowhere. The next few went somewhere small. After six months of weekly writing, Ness Labs had 10,000 subscribers.</p>
+<p>Not from one viral post. From consistent, specific, honest writing about a topic almost no one else was covering with the same combination of rigor and accessibility.</p>
+<hr>
+<h2 id="the-membership-model"><a class="header" href="#the-membership-model">The Membership Model</a></h2>
+<p>Anne-Laure Le Cunff launched Ness Labs as a membership: a paid community for “curious minds” who wanted the research, the writing, and the community of people thinking about the same things.</p>
+<p>Price: £9/month.</p>
+<p>This was not a conventional content business model. Most newsletters were free, monetized through sponsorships or course sales. A membership implied ongoing value — that the community itself was part of what you were buying.</p>
+<p>She believed the community was part of it. She was right.</p>
+<p>The Ness Labs community became a place where academics, therapists, designers, developers, and writers found each other around shared questions: how do we learn better? How do we work without burning out? How do we stay curious without being overwhelmed?</p>
+<p>By 2022, Ness Labs had thousands of paid members and had become a significant part of the broader “mindful productivity” conversation online.</p>
+<hr>
+<h2 id="the-phd-alongside"><a class="header" href="#the-phd-alongside">The PhD Alongside</a></h2>
+<p>While running Ness Labs, Anne-Laure was completing a PhD in neuroscience at King’s College London.</p>
+<p>She has written about this decision — the decision to pursue both the academic credential and the public-facing business simultaneously — as a deliberate choice about identity. She did not want to be just a content creator. She wanted the research to be real, not just cited.</p>
+<p>The PhD gave the content credibility. The content funded the lifestyle that made the PhD possible. Each supported the other.</p>
+<p>“The goal was never to optimize for one metric,” she has said. “The goal was to build a life with enough freedom to be curious.”</p>
+<hr>
+<h2 id="what-she-built"><a class="header" href="#what-she-built">What She Built</a></h2>
+<p>Ness Labs is not one thing. It is a newsletter, a membership, a podcast, a set of courses, a community. Anne-Laure Le Cunff built each piece deliberately, testing what served the members and removing what didn’t.</p>
+<p>The through-line is always the question: what helps people think better, learn better, live better?</p>
+<p>She has never chased virality. The most-shared pieces on Ness Labs are the most specific ones — the ones where she goes deep on a single study or a single framework and explains exactly how to apply it.</p>
+<p>Specificity is generosity, in this context. The vague post helps no one. The specific post changes how someone works this week.</p>
+<hr>
+<h2 id="the-last-thing-8"><a class="header" href="#the-last-thing-8">The Last Thing</a></h2>
+<p>Anne-Laure Le Cunff left Google on a Thursday.</p>
+<p>She started writing the following Monday.</p>
+<p>The readers came, slowly, and then stayed. The community formed around a shared question that she had been asking herself.</p>
+<p>She is still asking it. She has just found, along the way, that tens of thousands of people were asking it too — and that bringing those people together was itself the answer.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="david-perell-the-man-who-turned-writing-into-a-5m-education-business"><a class="header" href="#david-perell-the-man-who-turned-writing-into-a-5m-education-business">David Perell: The Man Who Turned Writing Into a $5M Education Business</a></h1>
+<p>In 2018, David Perell made a bet.</p>
+<p>He would write every day on the internet. He would share what he was learning about writing, about ideas, about how to think clearly. He would build an audience before he built a product.</p>
+<p>He had no product yet. He had a newsletter, a Twitter account, and a belief that the people who most needed to learn to write — the professionals, the knowledge workers, the founders — were not being served by any existing writing education.</p>
+<p>He turned out to be right.</p>
+<hr>
+<h2 id="the-problem-he-saw"><a class="header" href="#the-problem-he-saw">The Problem He Saw</a></h2>
+<p>David Perell grew up struggling with writing.</p>
+<p>Not because he was unintelligent — he was clearly not unintelligent. But because writing was taught, in every school he attended, as a set of rules to follow rather than a skill to practice. Five-paragraph essays, thesis statements, topic sentences. The form without the substance.</p>
+<p>He eventually figured out how to write by reading obsessively and imitating writers he admired. He took apart essays he loved and tried to understand why they worked. He practiced the way musicians practice — not to produce a finished product but to understand the mechanics.</p>
+<p>By the time he was in his mid-twenties, he could write well. More importantly, he understood writing as a learnable craft, not a natural talent.</p>
+<p>He built a course to teach it.</p>
+<hr>
+<h2 id="write-of-passage"><a class="header" href="#write-of-passage">Write of Passage</a></h2>
+<p>Write of Passage launched in 2019 as a six-week online course in writing for the internet.</p>
+<p>The price was $1,000. In 2019, this was high — unusually high for an online course from someone without institutional credentials or a large book deal.</p>
+<p>He launched to his newsletter list. The first cohort sold out.</p>
+<p>Not because of clever marketing. Because the audience he had spent a year building trusted him. They had read his writing. They had seen him apply the principles he was teaching. They had watched him build an audience from scratch using exactly the methods he was promising to teach.</p>
+<p>The course was the product. The newsletter was the proof of concept.</p>
+<hr>
+<h2 id="the-cohort-model"><a class="header" href="#the-cohort-model">The Cohort Model</a></h2>
+<p>Write of Passage was not a passive video course. It was a cohort — a group of students moving through the material together, workshopping each other’s writing, building connections that outlasted the six weeks.</p>
+<p>This model was unusual in online education at the time and has since become widely copied.</p>
+<p>The cohort model produced two things that individual video courses couldn’t: accountability (you’re not learning alone, you’re learning with a group that expects your participation) and community (the relationships formed in the cohort become part of the value, long after the content is consumed).</p>
+<p>Alumni became evangelists. Every cohort seeded the next one through word of mouth from people who had genuinely changed how they worked.</p>
+<hr>
+<h2 id="the-scale"><a class="header" href="#the-scale">The Scale</a></h2>
+<p>By 2022, Write of Passage had run seventeen cohorts. Thousands of alumni. A small team of coaches and administrators.</p>
+<p>David Perell was generating over $5 million in annual revenue from a writing education business he had built in four years from a newsletter and a Twitter account.</p>
+<p>He had not raised money. He had not taken on a co-founder. He had written consistently, taught what he knew, and built a community around the practice.</p>
+<hr>
+<h2 id="the-insight-he-returns-to"><a class="header" href="#the-insight-he-returns-to">The Insight He Returns To</a></h2>
+<p>David Perell’s central insight — the one he teaches and the one that built his business — is that ideas are the unit of competitive advantage for knowledge workers.</p>
+<p>Not effort. Not time. Ideas.</p>
+<p>“The person who can generate, develop, and communicate original ideas has an unfair advantage in every field,” he has said. “Writing is the tool that develops that muscle.”</p>
+<p>He built a business on this insight not because it was marketable but because he believed it — because he had experienced the compounding returns of a writing practice in his own life and career.</p>
+<p>The business is the proof of the thesis.</p>
+<hr>
+<h2 id="the-last-thing-9"><a class="header" href="#the-last-thing-9">The Last Thing</a></h2>
+<p>In 2018, David Perell made a bet that he would write every day on the internet.</p>
+<p>In 2022, the daily writing had produced a newsletter, a podcast, a course business, a community, and a reputation as one of the more serious thinkers about what it means to communicate clearly.</p>
+<p>The bet paid off.</p>
+<p>It usually does, for people who make it long enough before stopping.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="corey-haines-the-marketer-who-built-the-best-swipe-file-on-the-internet"><a class="header" href="#corey-haines-the-marketer-who-built-the-best-swipe-file-on-the-internet">Corey Haines: The Marketer Who Built the Best Swipe File on the Internet</a></h1>
+<p>Corey Haines kept a folder.</p>
+<p>Not a metaphorical folder — an actual folder on his desktop labeled “SWIPE” where he dragged screenshots of ads, emails, landing pages, and copy that made him stop scrolling.</p>
+<p>By 2020, the folder had thousands of files. He had been collecting them for years — since his first marketing job, through his time as Head of Growth at Baremetrics, through freelance projects and consulting gigs and every other configuration of the marketing work he had done.</p>
+<p>The folder was his education. It was also, he eventually realized, a product.</p>
+<hr>
+<h2 id="the-swipe-file-concept"><a class="header" href="#the-swipe-file-concept">The Swipe File Concept</a></h2>
+<p>A swipe file is a marketer’s practice of collecting examples of great copy and creative work — things worth learning from, things worth imitating, things that work.</p>
+<p>The concept is old. Ad copywriters in the 1950s kept physical folders. David Ogilvy had one. Gary Halbert had one. Every serious student of persuasion has some version of one.</p>
+<p>What Corey Haines had that they didn’t: a way to share it with thousands of people simultaneously.</p>
+<p>He launched Swipe Files in 2020 as a membership — access to a searchable, categorized collection of marketing examples: ads, emails, landing pages, onboarding flows, subject lines, popups, pricing pages.</p>
+<p>Every example was real. Every example was annotated with notes about what made it work.</p>
+<hr>
+<h2 id="the-niche-within-the-niche"><a class="header" href="#the-niche-within-the-niche">The Niche Within the Niche</a></h2>
+<p>Swipe Files was not the only marketing example resource on the internet. But it was the most focused on SaaS and software companies — the specific subset of marketing that Corey Haines had spent his career in.</p>
+<p>This specificity was a strength.</p>
+<p>A marketer at a consumer packaged goods company needed different examples than a marketer at a B2B SaaS startup. The swipe files that existed were too broad to be maximally useful to either.</p>
+<p>Corey Haines built for the one he knew: the software marketer trying to improve conversion rates, onboarding flows, email sequences.</p>
+<p>The members who joined were not casual browsers. They were practitioners who needed specific examples for specific problems. Their willingness to pay — $25/month for access — reflected the professional value, not the consumer entertainment value.</p>
+<hr>
+<h2 id="the-paradox-of-curated-content"><a class="header" href="#the-paradox-of-curated-content">The Paradox of Curated Content</a></h2>
+<p>Corey Haines built something that sounds easy and is genuinely hard: a curated collection.</p>
+<p>Curation looks easy because the product is screenshots and annotations, not code or manufactured goods. But curation at quality is the exercise of taste — the ability to look at ten thousand examples and identify the thirty that teach something important, presented in a way that transfers the lesson.</p>
+<p>That skill is rare and valuable and impossible to automate convincingly.</p>
+<p>He kept the quality high by only adding examples he would personally use as a reference. If he wouldn’t pull it out in a planning meeting as a model, it didn’t go into the collection.</p>
+<p>This constraint kept Swipe Files useful over time, as opposed to becoming another overwhelming archive where everything is technically available but nothing is findable.</p>
+<hr>
+<h2 id="beyond-swipe-files"><a class="header" href="#beyond-swipe-files">Beyond Swipe Files</a></h2>
+<p>Corey Haines has built other products since Swipe Files — a course, consulting offers, other tools. But Swipe Files remains the anchor: the recurring revenue, the trusted resource, the community.</p>
+<p>He has said that the lesson of Swipe Files is about the power of specificity and the value of doing one thing well over a long time.</p>
+<p>“There are thousands of marketing newsletters,” he has written. “There is one Swipe Files. Being the one requires choosing to be nothing else.”</p>
+<hr>
+<h2 id="the-last-thing-10"><a class="header" href="#the-last-thing-10">The Last Thing</a></h2>
+<p>The folder on Corey Haines’s desktop was his education and his product, simultaneously.</p>
+<p>He had collected it for himself. He shared it because other people needed it. They paid for it because it saved them hours of research every week.</p>
+<p>The gap between “this is useful to me” and “this is a business” turned out to be smaller than he expected.</p>
+<p>It usually is.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="jack-butcher-the-ad-agency-designer-who-turned-visual-ideas-into-a-5m-business"><a class="header" href="#jack-butcher-the-ad-agency-designer-who-turned-visual-ideas-into-a-5m-business">Jack Butcher: The Ad Agency Designer Who Turned Visual Ideas Into a $5M Business</a></h1>
+<p>Jack Butcher spent ten years making other people’s ideas look good.</p>
+<p>He was a designer at advertising agencies — the kind of places where you work 60 hours a week producing beautiful work that runs for a week and then disappears into a client’s archive. He was good at it. He was well paid. He was, in the way that matters most, not building anything for himself.</p>
+<p>In 2019, he quit.</p>
+<p>He had no plan beyond a conviction that he could package what he knew about design and communication into something he owned — something that didn’t depend on a client’s budget cycle or a creative director’s approval.</p>
+<p>He built Visualize Value.</p>
+<hr>
+<h2 id="the-visual-language"><a class="header" href="#the-visual-language">The Visual Language</a></h2>
+<p>Visualize Value started as a Twitter experiment.</p>
+<p>Jack Butcher began posting images — clean, minimal graphics that translated complex ideas into visual form. A concept, expressed as a diagram. A principle, expressed as a ratio. An insight, expressed as a before-and-after.</p>
+<p>The aesthetic was deliberately stark: black background, white text, simple geometric shapes. No decoration, no gradients, no stock photography. The constraint forced clarity — if the idea didn’t work as a simple diagram, it didn’t work.</p>
+<p>He posted one image per day.</p>
+<p>The response was immediate and disproportionate. The images were shared, screenshotted, used as profile pictures, reposted without credit and then, when people tracked down the source, with it.</p>
+<p>By month three, he had 50,000 Twitter followers.</p>
+<hr>
+<h2 id="the-productization"><a class="header" href="#the-productization">The Productization</a></h2>
+<p>Jack Butcher looked at the attention and asked the same question every creator eventually asks: how do I convert this into something sustainable?</p>
+<p>His answer was unusual. He didn’t launch a course about design. He launched a course about something more fundamental: how to take whatever knowledge or expertise you have and package it into scalable products.</p>
+<p>The course was called “Build Once, Sell Twice.” The premise: your expertise is a raw material. Design is the manufacturing process. Products are what you ship.</p>
+<p>Price: $500.</p>
+<p>First launch revenue: $100,000.</p>
+<p>He had taken the meta-lesson of what he was doing and turned it into the product itself.</p>
+<hr>
+<h2 id="ownership-economy"><a class="header" href="#ownership-economy">Ownership Economy</a></h2>
+<p>Jack Butcher became one of the early prominent voices in what has been called the “ownership economy” — the idea that knowledge workers should own the products of their expertise rather than selling their time on an hourly basis.</p>
+<p>“Trading time for money is a linear equation,” he has said in various formats. “Creating products from your knowledge is an exponential one.”</p>
+<p>This is not a new idea. What Jack Butcher did that was new was express it visually, repeatably, in a format that was immediately understandable and widely shareable. The ideas spread because the medium was perfectly matched to the message.</p>
+<p>He understood distribution at a level that most creators with equivalent ideas did not.</p>
+<hr>
+<h2 id="the-numbers"><a class="header" href="#the-numbers">The Numbers</a></h2>
+<p>By 2022, Visualize Value — the brand that had started as a Twitter experiment with no plan — was generating over $5 million in annual revenue from courses, a membership, NFTs (briefly, during that period), design resources, and licensing.</p>
+<p>One person, one brand, one visual language applied consistently across many products.</p>
+<p>The ad agency client list from 2018 was gone. Everything he made, he owned.</p>
+<hr>
+<h2 id="what-he-keeps-teaching"><a class="header" href="#what-he-keeps-teaching">What He Keeps Teaching</a></h2>
+<p>Jack Butcher’s curriculum, whether it appears as a tweet or a course module, returns to the same idea: the leverage point for any knowledge worker is not working more hours but building better systems.</p>
+<p>The system he built was a visual language that made ideas portable. Every tweet was a sample. Every sample built the audience. Every audience member was a potential customer. Every customer funded more time to build.</p>
+<p>He designed the system the way he designed everything: reduce to the essential, remove everything else, make the core idea impossible to misunderstand.</p>
+<p>It worked.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="simon-høiberg-the-danish-developer-who-made-9-to-5-optional"><a class="header" href="#simon-høiberg-the-danish-developer-who-made-9-to-5-optional">Simon Høiberg: The Danish Developer Who Made 9-to-5 Optional</a></h1>
+<p>Simon Høiberg had a stable job as a software developer in Denmark.</p>
+<p>Good salary. Reasonable hours. The kind of employment that makes responsible adults nod approvingly.</p>
+<p>He was bored out of his mind.</p>
+<p>Not because the work was bad — because it was finite. He could see exactly where the job led: senior developer, then maybe a team lead role, then management, then retirement. The path was clear and the path was someone else’s.</p>
+<p>He started building things at night.</p>
+<hr>
+<h2 id="the-first-products"><a class="header" href="#the-first-products">The First Products</a></h2>
+<p>Simon Høiberg’s early products followed a pattern that many developer-founders recognize: technically interesting, commercially unsuccessful.</p>
+<p>He built a language learning app. He built a developer tool. He built a few things that worked fine and made almost no money.</p>
+<p>He was learning, though not what he thought he was learning. He thought he was learning how to build products. He was actually learning that building products and finding customers for products are completely different skills, and he only had one of them.</p>
+<p>The lesson arrived when a small app he had built — almost as an afterthought — started generating $200/month without any marketing effort. He had built it to scratch his own itch, shared it in one Reddit thread, and forgotten about it.</p>
+<p>The $200/month was not from his best work. It was from his most useful work.</p>
+<p>The distinction changed how he built.</p>
+<hr>
+<h2 id="the-strategy"><a class="header" href="#the-strategy">The Strategy</a></h2>
+<p>Simon Høiberg’s strategy, once he articulated it, was simple: find niche problems that developers and small businesses encountered repeatedly, build the smallest possible solution, charge a small monthly fee, repeat.</p>
+<p>Each product was a small bet. A small bet that might fail — and often did. But each failure was cheap, because the products were small, and each success compounded.</p>
+<p>He started documenting the strategy on YouTube. Not as a guru, not as someone who had “made it” — as someone actively trying to figure it out, sharing what worked and what didn’t with specificity that most YouTube creators avoided because specificity meant being wrong in public.</p>
+<p>His YouTube channel grew because the content was honest.</p>
+<hr>
+<h2 id="teaching-as-distribution"><a class="header" href="#teaching-as-distribution">Teaching as Distribution</a></h2>
+<p>Simon Høiberg’s YouTube channel — eventually reaching hundreds of thousands of subscribers — was not a separate business from his product portfolio. It was the distribution.</p>
+<p>When he launched a new product, the channel provided instant access to an audience of people who trusted him because they had watched him figure things out honestly. Not every viewer became a customer. But a meaningful percentage did, and that percentage was enough to make new products viable in a way they wouldn’t have been without the channel.</p>
+<p>He had built what the marketing world calls a “media-first business” without setting out to. He built it because he kept answering questions publicly that other developers were asking privately.</p>
+<hr>
+<h2 id="the-exit-from-employment"><a class="header" href="#the-exit-from-employment">The Exit From Employment</a></h2>
+<p>Simon Høiberg left his job in 2020.</p>
+<p>Not dramatically — his products had been generating enough revenue for long enough that the decision was financially clear long before he made it psychologically. He had built the floor high enough that employment was optional.</p>
+<p>That optionality — the ability to leave not because he hated his job but because he had built something better — is the outcome he talks about most when asked what the goal was.</p>
+<p>“I didn’t want to quit my job because I hated it,” he has said. “I wanted to quit because I had something I liked more.”</p>
+<p>That’s the difference. Quitting from hate is escape. Quitting from better is choice.</p>
+<hr>
+<h2 id="the-last-thing-11"><a class="header" href="#the-last-thing-11">The Last Thing</a></h2>
+<p>Simon Høiberg made 9-to-5 optional.</p>
+<p>Not by striking it rich on a single product. By building many small things that worked, documenting the process for people who wanted to do the same, and compounding both the revenue and the audience over years.</p>
+<p>The Danish developer who was bored at work is now building things that interest him, teaching what he learns, and choosing every morning whether to work or not.</p>
+<p>He almost always chooses to work.</p>
+<p>But the choice is his.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="damon-chen-the-developer-who-built-a-3m-business-from-one-underserved-problem"><a class="header" href="#damon-chen-the-developer-who-built-a-3m-business-from-one-underserved-problem">Damon Chen: The Developer Who Built a $3M Business From One Underserved Problem</a></h1>
+<p>Damon Chen launched Testimonial.to in 2021 with a landing page, a Stripe integration, and one core belief: collecting customer testimonials was painful enough that people would pay to make it simple.</p>
+<p>He was right.</p>
+<p>Twelve months later, Testimonial.to was generating $30,000 in monthly recurring revenue.</p>
+<p>Alone. No co-founder, no employees, no outside investment.</p>
+<hr>
+<h2 id="the-problem"><a class="header" href="#the-problem">The Problem</a></h2>
+<p>The problem Damon Chen solved is one that every business owner has encountered and nobody had made elegant.</p>
+<p>You know your customers are happy. You want to show potential customers that your customers are happy. But getting actual testimonials — written, video, with a photo, formatted for a website — is a friction-filled process that requires chasing people, formatting responses manually, and updating your website whenever something new comes in.</p>
+<p>Most businesses either have no testimonials or have three testimonials from three years ago from customers who might not even be customers anymore.</p>
+<p>Testimonial.to was a link you sent. Customers clicked it, recorded a video or wrote text, and their testimonial appeared on a hosted wall that you could embed on your website in one line of code.</p>
+<p>That was the whole product at launch.</p>
+<hr>
+<h2 id="the-launch"><a class="header" href="#the-launch">The Launch</a></h2>
+<p>Damon Chen posted Testimonial.to on Product Hunt in April 2021.</p>
+<p>He had prepared the listing carefully — screenshots, a short demo video, a clear description of the problem and the solution. He had an email list of zero people and a Twitter following of a few thousand.</p>
+<p>Product Hunt front page: yes.</p>
+<p>Revenue on launch day: $2,400.</p>
+<p>This was real validation, not just traffic. People were paying, the same day they discovered it, for a product that solved a problem they recognized immediately.</p>
+<p>He had found a real problem and built a clean solution and put it in front of the right people.</p>
+<hr>
+<h2 id="what-he-did-after"><a class="header" href="#what-he-did-after">What He Did After</a></h2>
+<p>Damon Chen’s post-launch behavior is worth studying because it is the opposite of what most founders do after a successful launch.</p>
+<p>He did not add features frantically. He did not raise prices immediately. He did not hire.</p>
+<p>He listened.</p>
+<p>He read every support ticket. He read every feature request. He tracked where users dropped off in the onboarding. He identified the specific friction points — the places where the tool was almost good enough but not quite — and he fixed them.</p>
+<p>The product became better, specifically better, in response to the people who were already using it.</p>
+<p>MRR went from $2,400 in month one to $10,000 by month four. Not because he added features. Because the features he had started working better.</p>
+<hr>
+<h2 id="the-positioning-win"><a class="header" href="#the-positioning-win">The Positioning Win</a></h2>
+<p>Testimonial.to succeeded not just because it was useful but because it was positioned correctly.</p>
+<p>“Collect video and text testimonials easily” — the tagline was not clever. It was accurate. It described exactly what the product did for exactly the person who needed it.</p>
+<p>In a world full of marketing that describes products in terms of outcomes (“transform your brand,” “drive conversions”) rather than actions (“collect testimonials”), clarity is a competitive advantage.</p>
+<p>When someone Googles “how to collect testimonials from customers,” Testimonial.to is the answer. Not because of elaborate SEO strategy — because the product name and description match what people are searching for.</p>
+<hr>
+<h2 id="the-3m-business"><a class="header" href="#the-3m-business">The $3M Business</a></h2>
+<p>By 2023, Testimonial.to was processing enough transactions to generate several million dollars in annual recurring revenue.</p>
+<p>Damon Chen had by then hired a small team — customer support, some part-time help with marketing. But the product remained focused. It still did what it said: collected testimonials. It had more formats, more integrations, more polish.</p>
+<p>Not more things. More of the same thing, done better.</p>
+<hr>
+<h2 id="the-last-thing-12"><a class="header" href="#the-last-thing-12">The Last Thing</a></h2>
+<p>Damon Chen built a $3 million business from one underserved problem.</p>
+<p>Not by disrupting an industry. By looking at something that was annoying — collecting customer testimonials — and making it less annoying.</p>
+<p>The market for “less annoying” is larger than it looks. Because most things are still annoying. And the developers who find them, build the solution, and charge a fair price for making them less so will keep building real businesses from what everyone else is too comfortable to notice.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="pat-flynn-the-architect-who-got-laid-off-and-built-a-10m-media-empire"><a class="header" href="#pat-flynn-the-architect-who-got-laid-off-and-built-a-10m-media-empire">Pat Flynn: The Architect Who Got Laid Off and Built a $10M Media Empire</a></h1>
+<p>On June 17, 2008, Pat Flynn was laid off.</p>
+<p>He had been working as an architect — a real architect, with blueprints and construction documents — and the housing market had just collapsed. His firm let him go on a Tuesday afternoon with a handshake and an HR packet.</p>
+<p>He drove home. He sat in his car in the driveway for twenty minutes before going inside to tell his wife.</p>
+<p>He had no plan. He had a baby on the way.</p>
+<hr>
+<h2 id="the-study-guide-that-changed-everything"><a class="header" href="#the-study-guide-that-changed-everything">The Study Guide That Changed Everything</a></h2>
+<p>Before the layoff, Pat Flynn had been studying for an architecture licensing exam — the LEED exam, a certification in green building practices. It was mandatory for his career and he had been preparing for months.</p>
+<p>After the layoff, with time suddenly available, he finished the study guide he had been putting together: a set of notes, synthesized from his research, organized for someone who needed to pass the exam.</p>
+<p>He posted it as a blog.</p>
+<p>He didn’t think much of it. He was job hunting. The blog was something to do.</p>
+<p>Google started sending him traffic.</p>
+<p>People studying for the LEED exam found his notes, used them, emailed him to say they’d passed. Someone suggested he could sell the notes as a PDF.</p>
+<p>He made it available for $19.99.</p>
+<p>First month: $7,906.</p>
+<p>He stared at the number for a long time. He had never made that much money in a month from anything.</p>
+<hr>
+<h2 id="smart-passive-income"><a class="header" href="#smart-passive-income">Smart Passive Income</a></h2>
+<p>Pat Flynn launched Smart Passive Income in 2008 — a blog and podcast where he documented everything: his income, his products, his experiments, his failures.</p>
+<p>The transparency was radical for the time. Real numbers, real strategies, real outcomes. Not theoretical. Not aspirational. Actual months, actual revenue, actual breakdown of where the money came from.</p>
+<p>The income reports became required reading in the online business community. Not because they were always impressive — the early ones were modest, and he shared those too — but because they were honest. In a space full of vague promises and manufactured success stories, Pat Flynn’s granular monthly accounting was a form of trust.</p>
+<p>He built an audience on trust. Then he built products for that audience.</p>
+<hr>
+<h2 id="the-portfolio"><a class="header" href="#the-portfolio">The Portfolio</a></h2>
+<p>By 2015, Smart Passive Income was generating over $2 million per year from multiple streams: the podcast, online courses, book royalties, affiliate commissions from tools he genuinely used and recommended, software products.</p>
+<p>Pat Flynn had become the template for what “online income” looked like for a generation of would-be entrepreneurs.</p>
+<p>This was not accidental. He had built it methodically, testing one thing at a time, reporting the results, improving based on what worked.</p>
+<p>The architecture training had given him something useful: the ability to think in systems, to work from plans, to understand that complex outcomes have structured causes.</p>
+<p>He applied that thinking to building a media business.</p>
+<hr>
+<h2 id="the-vulnerability-that-created-the-brand"><a class="header" href="#the-vulnerability-that-created-the-brand">The Vulnerability That Created the Brand</a></h2>
+<p>Pat Flynn has talked about his mental health struggles. About the anxiety that comes with building publicly, the imposter syndrome, the moments of doubt.</p>
+<p>He has talked about his family first — about why he makes the decisions he makes based on what kind of parent and husband he wants to be, not just what the revenue chart says.</p>
+<p>This vulnerability is not a branding decision. It is the reason his audience trusts him.</p>
+<p>People can tell when authenticity is performed. They can also tell when it’s real. Pat Flynn’s career has been built on twenty years of real — real failures, real numbers, real anxiety, real moments of “I don’t know if I should keep going.”</p>
+<p>He kept going. The audience kept showing up.</p>
+<hr>
+<h2 id="the-last-thing-13"><a class="header" href="#the-last-thing-13">The Last Thing</a></h2>
+<p>On June 17, 2008, Pat Flynn was laid off with a handshake and an HR packet.</p>
+<p>In 2023, Smart Passive Income generates over $10 million in cumulative lifetime revenue. He has a team now. He has books, courses, software, a podcast that has been downloaded hundreds of millions of times.</p>
+<p>He still talks about the driveway — the twenty minutes sitting in the car before going inside to tell his wife.</p>
+<p>Not because it was romantic. Because it was the moment before everything changed, and he thinks it’s important to remember what everything changing feels like from the inside.</p>
+<p>It feels like not knowing what to do with your hands.</p>
+<p>And then, eventually, you figure it out.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>

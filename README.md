@@ -2,7 +2,9 @@
 
 A fully free, deployable book system built on mdBook + GitHub Pages + Lemon Squeezy.
 
-**Live demo:** `https://YOUR_USERNAME.github.io/dynamic-book-generator`
+**Live site:** https://janny844.github.io/solopreneur-stories/
+
+**👉 For day-to-day instructions, read [USAGE.md](USAGE.md).**
 
 ---
 
@@ -13,7 +15,6 @@ A static book website that:
 - Hosts 100 founder stories in narrative essay style
 - Deploys automatically on every `git push`
 - Sells the full EPUB via Lemon Squeezy (zero backend, zero monthly cost)
-- Exports an EPUB file for Kindle and e-readers via CI/CD
 
 **Cost to run: $0/month**
 
@@ -27,11 +28,11 @@ A static book website that:
 - A terminal (Git Bash on Windows, Terminal on Mac/Linux)
 - mdBook installed locally (for previewing — optional for deploy)
 
-### Step 1: Fork or clone this repo
+### Step 1: Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/dynamic-book-generator
-cd dynamic-book-generator
+git clone https://github.com/janny844/solopreneur-stories
+cd solopreneur-stories
 ```
 
 ### Step 2: Install mdBook locally (optional, for preview)
@@ -57,7 +58,6 @@ mdbook serve --open
 ### Step 4: Push to GitHub
 
 ```bash
-git remote set-url origin https://github.com/YOUR_USERNAME/dynamic-book-generator.git
 git push origin main
 ```
 
@@ -69,7 +69,9 @@ In your GitHub repo:
 3. Branch: **gh-pages** / **/ (root)**
 4. Save
 
-Your book will be live at `https://YOUR_USERNAME.github.io/dynamic-book-generator` within 2 minutes.
+Your book will be live at https://janny844.github.io/solopreneur-stories/ within 2 minutes.
+
+*(Already done for this repo — Pages is enabled and deploying.)*
 
 ---
 
@@ -145,15 +147,22 @@ See [PAYMENT_SETUP.md](PAYMENT_SETUP.md) for full instructions.
 
 ## Getting the EPUB
 
-The GitHub Actions workflow automatically builds the EPUB on every push.
+**The CI pipeline builds HTML only — it does not produce an EPUB.**
 
-To download it:
-1. Go to your repo on GitHub
-2. Click **Actions** tab
-3. Open the latest successful workflow run
-4. Download the artifact (or find `book/epub/output.epub`)
+Generate one locally when you need it (you only need it once, to upload to Lemon Squeezy):
 
-Upload this file to Lemon Squeezy as your digital product.
+```bash
+cargo install mdbook-epub      # requires Rust: https://rustup.rs
+```
+
+Add to `book.toml`:
+```toml
+[output.epub]
+```
+
+Then `mdbook build` — the EPUB lands in `book/epub/`.
+
+Full steps in [USAGE.md](USAGE.md#getting-an-epub-to-sell).
 
 ---
 
@@ -196,10 +205,14 @@ Stories follow the Sun Yu-cheng public essay style:
 - Scene breaks (`---`) between major story shifts
 - End with a callback to the opening moment
 
-See the 3 sample stories for reference:
+See these stories for reference:
 - [Marc Lou](src/stories/marc-lou.md)
-- [Pieter Levels](src/stories/pieter-levels.md)
-- [Danny Postma](src/stories/danny-postma.md)
+- [Sara Blakely](src/stories/sara-blakely.md)
+- [Pat Flynn](src/stories/pat-flynn.md)
+
+**41 stories are currently written.** See [src/SUMMARY.md](src/SUMMARY.md) for the full list.
+
+> ⚠️ Story facts are reconstructed from general knowledge, not sourced. Verify all figures before selling. See [USAGE.md](USAGE.md#️-before-you-charge-money).
 
 ---
 

@@ -10,13 +10,22 @@ fi
 
 TITLE="$1"
 
+# Transliterate accents to ASCII, falling back to the raw title if iconv is unavailable.
+# Kept as its own step: chaining `|| echo` onto a pipeline makes the `||` swallow
+# every later stage whenever iconv succeeds, which silently skips slugification.
+ASCII_TITLE=$(echo "$TITLE" | iconv -t ascii//TRANSLIT 2>/dev/null) || ASCII_TITLE="$TITLE"
+
 # Sanitize to URL slug: lowercase, strip punctuation, replace spaces with hyphens
-SLUG=$(echo "$TITLE" \
-  | iconv -t ascii//TRANSLIT 2>/dev/null || echo "$TITLE" \
+SLUG=$(echo "$ASCII_TITLE" \
   | tr -d "'" \
   | tr -cs '[:alnum:]' '-' \
   | tr '[:upper:]' '[:lower:]' \
   | sed 's/^-*//;s/-*$//')
+
+if [ -z "$SLUG" ]; then
+  echo "[ERROR] Could not build a filename from: $TITLE"
+  exit 1
+fi
 
 FILE="src/stories/${SLUG}.md"
 mkdir -p src/stories

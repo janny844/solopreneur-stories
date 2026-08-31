@@ -1,7 +1,6 @@
 [book]
 authors = ["AI Book Engine"]
 language = "en"
-multilingual = false
 src = "src"
 title = "100 Solopreneur Short Stories"
 description = "Gripping, raw, unvarnished tales of solo founders building in silence."
@@ -14,8 +13,5 @@ create-missing = false
 default-theme = "light"
 preferred-dark-theme = "navy"
 no-section-label = true
-git-repository-url = "https://github.com/YOUR_USERNAME/dynamic-book-generator"
-additional-css = ["custom.css"]
-
-[output.epub]
-optional = true
+git-repository-url = "https://github.com/janny844/solopreneur-stories"
+additional-css = ["src/custom.css"]

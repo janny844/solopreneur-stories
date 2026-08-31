@@ -1,0 +1,45 @@
+# 100 Solopreneur Short Stories — Founder Name List
+# One name per line. Lines starting with # are ignored.
+# Run: ./scripts/batch-generate-stories.sh names.txt
+
+Tony Dinh
+Tibo Louis-Lucas
+Sahil Lavingia
+Justin Welsh
+Arvid Kahl
+Jon Yongfook
+Harry Dry
+Anne-Laure Le Cunff
+Nathan Barry
+Corey Haines
+Josh Pigford
+Courtland Allen
+Ben Tossell
+Damon Chen
+Tyler Tringas
+Rob Walling
+Simon Hoiberg
+Kilian Valkhof
+David Perell
+Pat Flynn
+Alex Hormozi
+Andrew Wilkinson
+Adam Wathan
+Steve Schoger
+Guillermo Rauch
+Lee Robinson
+Ryan Hoover
+Pooja Iyer
+Steph Smith
+Eka Lesmana
+Sergio Mattei
+Dominic Monn
+Florin Pop
+Vadim Demedes
+Thomas Frank
+Ali Abdaal
+Jack Butcher
+Dan Koe
+Nicolas Cole
+Dakota Robertson
+Matt Gray

@@ -1,0 +1,93 @@
+/* 100 Solopreneur Short Stories — mdBook custom theme */
+
+/* Typography for long-form narrative reading */
+:root {
+    --sidebar-width: 260px;
+}
+
+.content main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Readable body text */
+.content p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #1e293b;
+    margin-bottom: 1.4rem;
+}
+
+/* Strong headings */
+.content h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+}
+
+.content h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 0.75rem;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.4rem;
+}
+
+/* Horizontal rule as scene break */
+.content hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 2.5rem auto;
+    width: 40%;
+}
+
+/* Opening drop-cap feel via strong first para */
+.content p:first-of-type {
+    font-size: 1.1rem;
+    color: #0f172a;
+}
+
+/* Blockquotes for pull quotes */
+.content blockquote {
+    border-left: 4px solid #38bdf8;
+    margin: 2rem 0;
+    padding: 0.75rem 1.25rem;
+    background: #f0f9ff;
+    border-radius: 0 8px 8px 0;
+    color: #0369a1;
+    font-style: italic;
+}
+
+/* CTA box injected via raw HTML in intro.md */
+.content div[style] a[style] {
+    transition: opacity 0.15s ease;
+}
+.content div[style] a[style]:hover {
+    opacity: 0.85;
+}
+
+/* Sidebar story list styling */
+.sidebar .chapter li a {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Dark theme tweaks */
+.navy .content p {
+    color: #cbd5e1;
+}
+.navy .content h1,
+.navy .content h2 {
+    color: #f1f5f9;
+}
+.navy .content blockquote {
+    background: #1e3a5f;
+    color: #7dd3fc;
+    border-left-color: #38bdf8;
+}

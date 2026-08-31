@@ -1,0 +1,28 @@
+You will set up a complete mdBook project for "100 Solopreneur Short Stories".
+This is a GitHub‑based fully‑free book system, no paid services, no API keys required.
+
+Project requirements:
+1. Use official rust‑lang/mdBook framework, generate book.toml, src/SUMMARY.md, full folder structure.
+2. Project theme: 100 solo‑founder / entrepreneur short stories. Writing style: gripping, viral essay‑like narrative tone, similar to Sun Yu‑cheng public essay style, story‑driven, entertaining, not dry textbook business text.
+3. NO flowcharts, NO ASCII diagrams, NO charts. Only pure text story content.
+4. Two‑mode character source workflow built‑in:
+  ‑ Manual add: user manually input entrepreneur name.
+  ‑ Batch import: read plain text name‑list file, batch generate story markdown files for each person.
+5. Output support: mdBook local web preview, export EPUB e‑book. No PDF complex layout for now.
+6. Create shell helper scripts:
+  ‑ ./add‑story.sh → add single entrepreneur story file
+  ‑ ./batch‑generate‑stories.sh → consume names.txt batch create multiple story markdown entries
+7. Do NOT hard‑code fixed person dropdown list, keep generic, flexible for 1‑100 entries.
+8. Keep project clean, separate story source markdown, meta notes, build outputs.
+9. Generate sample 3 demo entrepreneur short stories as examples inside src, so I can see style reference.
+10. Output clear README‑md: how to install mdBook locally, how to run preview, how to deploy to GitHub Pages for free hosting, how to run batch scripts.
+
+Deliverables:
+‑ Full project file tree created locally.
+‑ book.toml configured.
+‑ SUMMARY.md auto‑ready for growing up to 100 stories.
+‑ Helper shell scripts executable.
+‑ Sample 3 short stories inside source.
+‑ Complete readme for user operation steps.
+
+Important constraint: Do NOT build web UI application. This is mdBook static book project only, focus on batch story text generation pipeline.

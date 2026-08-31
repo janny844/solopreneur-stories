@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 Solopreneur Short Stories</title>
+  <meta name="description" content="Gripping, raw stories of 100 solo founders who built something real — alone, broke, and against the odds.">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    .container { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Hero */
+    .hero {
+      padding: 5rem 1.5rem 3rem;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .hero .eyebrow {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    .hero p.subtitle {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 540px;
+      margin: 0 auto 2.5rem;
+    }
+
+    /* CTA Box */
+    .cta-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin: 0 auto 3rem;
+      max-width: 480px;
+    }
+    .cta-box h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .cta-box p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.85rem 2rem;
+      border-radius: 8px;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+    .btn-primary:hover { transform: translateY(-2px); opacity: 0.92; text-decoration: none; }
+    .cta-free {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .cta-free a { color: var(--accent); }
+
+    /* Stats bar */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 4rem;
+    }
+    .stat { text-align: center; }
+    .stat .num { font-size: 1.75rem; font-weight: 800; color: var(--accent); }
+    .stat .label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* Sample stories */
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+    .story-grid {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 4rem;
+    }
+    .story-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: border-color 0.15s ease;
+    }
+    .story-card:hover { border-color: var(--accent); }
+    .story-card .num {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+    .story-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+    .story-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+    .story-card a { font-size: 0.875rem; font-weight: 600; }
+
+    /* Philosophy */
+    .philosophy {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 4rem;
+    }
+    .philosophy p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+    .philosophy p:last-child { margin-bottom: 0; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+  <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+</head>
+<body>
+
+  <div class="hero">
+    <p class="eyebrow">100 Founders &middot; 100 Stories</p>
+    <h1>The Solopreneur Stories Nobody Told You</h1>
+    <p class="subtitle">
+      Gripping, specific, true. One founder per story. No fluff, no frameworks — just what happened, what broke, and what worked.
+    </p>
+
+    <div class="cta-box">
+      <h2>Get All 100 Stories</h2>
+      <p>EPUB edition — read on Kindle, iPad, or any e-reader. One payment, yours forever.</p>
+      <!-- Replace with your Lemon Squeezy or Gumroad checkout URL -->
+      <a href="YOUR_PAYMENT_URL_HERE" class="btn-primary lemonsqueezy-button">
+        Download Full EPUB &mdash; $9
+      </a>
+      <span class="cta-free">
+        Or <a href="./book/">read the first 3 stories free in your browser &rarr;</a>
+      </span>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="stats">
+      <div class="stat"><div class="num">100</div><div class="label">Stories</div></div>
+      <div class="stat"><div class="num">~3min</div><div class="label">Per Story</div></div>
+      <div class="stat"><div class="num">$0</div><div class="label">To Start Reading</div></div>
+    </div>
+
+    <p class="section-title">Free Sample Stories</p>
+
+    <div class="story-grid">
+      <div class="story-card">
+        <p class="num">Story 01</p>
+        <h3>Marc Lou: The Indie Hacker Who Sold $1M in Templates</h3>
+        <p>"At 11:47 PM on a Wednesday, Marc Lou refreshed his Stripe dashboard for the fourth time that hour. $0. He closed the laptop."</p>
+        <a href="./book/stories/marc-lou.html">Read Story &rarr;</a>
+      </div>
+
+      <div class="story-card">
+        <p class="num">Story 02</p>
+        <h3>Pieter Levels: The Nomad Who Built 12 Startups in 12 Months</h3>
+        <p>"He had $4,400 left in his account, no permanent address, and a public promise on his website that he intended to keep."</p>
+        <a href="./book/stories/pieter-levels.html">Read Story &rarr;</a>
+      </div>
+
+      <div class="story-card">
+        <p class="num">Story 03</p>
+        <h3>Danny Postma: The Designer Who Accidentally Became a SaaS Founder</h3>
+        <p>"Danny Postma did not set out to build a SaaS. He set out to make a wallpaper. This is the part of the story he tells reluctantly."</p>
+        <a href="./book/stories/danny-postma.html">Read Story &rarr;</a>
+      </div>
+    </div>
+
+    <div class="philosophy">
+      <p><strong style="color: var(--text);">What makes these stories different?</strong></p>
+      <p>These are not TED talks polished into prose. They are not LinkedIn success theatre. They are the real stories — the 2 AM refreshes, the months with zero revenue, the product launches that flopped before the one that didn't.</p>
+      <p>Each story is written in the tradition of the Chinese public essay — narrative-driven, gripping, specific. No bullet points. No "key takeaways" section. Just the moment. The number. The thing that changed.</p>
+      <p>You will read these in one sitting. You will think about them afterward. Some of them will make you want to start something.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>100 Solopreneur Short Stories &mdash; Free to read online &middot; EPUB available for $9</p>
+    <p style="margin-top:0.5rem;"><a href="./book/">Read Free Sample &rarr;</a></p>
+  </footer>
+
+</body>
+</html>

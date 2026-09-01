@@ -1,0 +1,64 @@
+name: Generate PDF
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup mdBook (pre-built binary)
+        uses: peaceiris/actions-mdbook@v2
+        with:
+          mdbook-version: 'latest'
+
+      - name: Build HTML (single renderer — keeps flat book/ layout)
+        run: mdbook build
+
+      - name: Install Chromium
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y chromium-browser fonts-liberation
+
+      - name: Print book/print.html to PDF
+        run: |
+          # On Linux a straight file:// path works — no pwd -W needed.
+          # --no-sandbox is required when running as root in CI.
+          # fonts-liberation installed above for consistent rendering across OSes.
+          chromium-browser \
+            --headless \
+            --disable-gpu \
+            --no-sandbox \
+            --print-to-pdf="$(pwd)/book/100-solopreneur-short-stories.pdf" \
+            --no-pdf-header-footer \
+            "file://$(pwd)/book/print.html"
+
+      - name: Sanity-check PDF size
+        run: |
+          SIZE=$(stat -c%s "book/100-solopreneur-short-stories.pdf")
+          echo "PDF size: $SIZE bytes"
+          if [ "$SIZE" -lt 50000 ]; then
+            echo "[ERROR] PDF is suspiciously small ($SIZE bytes) — likely a headless render failure."
+            exit 1
+          fi
+
+      # Publish to a GitHub Release so the PDF has a permanent URL (not a 90-day artifact).
+      # Creates/overwrites the rolling "latest-pdf" tag on every push to main.
+      # Download URL: https://github.com/janny844/solopreneur-stories/releases/latest/download/100-solopreneur-short-stories.pdf
+      - name: Publish PDF to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest-pdf
+          name: "Latest PDF Build"
+          body: "Auto-generated PDF from the latest stories. Updated on every push to main."
+          files: book/100-solopreneur-short-stories.pdf
+          make_latest: true

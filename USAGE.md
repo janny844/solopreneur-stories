@@ -133,7 +133,10 @@ Then, **temporarily** add this to the bottom of `book.toml` (do not commit it �
 
 ```toml
 [output.epub]
+additional-css = ["src/epub-override.css"]
 ```
+
+`src/epub-override.css` is committed permanently (it's inert unless referenced, so it's safe to keep) and fixes a real bug: mdbook-epub ships its own bundled boilerplate stylesheet that forces `page-break-before: always` on **every** `h1` and `h2`. Our stories each have ~5 short `##` subsections, so that rule started a fresh page after almost every paragraph — mostly-blank pages, which is the "lots of empty space, only uses the upper part of the page" bug. The override cascades in after the boilerplate (same file, later in source order) and turns that off for `h2` while leaving each story's `h1` starting on a fresh page, which is correct for an anthology.
 
 Build with the local tools on PATH:
 ```bash
@@ -142,9 +145,38 @@ PATH="$PWD/.tools/bin:$PATH" mdbook build
 # HTML appears at: book/html/  (nested, because 2 renderers are now active — ignore it, don't push it)
 ```
 
-**Then revert `book.toml`** — remove the `[output.epub]` line before committing anything else, so the live deploy pipeline stays on its flat, working HTML layout.
+**Then revert `book.toml`** — remove the `[output.epub]` block before committing anything else, so the live deploy pipeline stays on its flat, working HTML layout.
 
 Upload the resulting `.epub` file to Lemon Squeezy as the digital product. `.tools/` and `*.epub` are both gitignored — the binaries and the book file are local-only and never get pushed.
+
+---
+
+## Getting a PDF (to sell)
+
+```bash
+./scripts/generate-pdf.sh
+```
+
+Output: `book/100-solopreneur-short-stories.pdf`
+
+**How it works:** mdBook has no first-party PDF renderer, so the script builds the site normally, then prints mdBook's own auto-generated `book/print.html` (a single page containing the whole book, which mdBook already produces for exactly this purpose) through headless Edge or Chrome — whichever it finds first in the standard Windows install locations. Typography matches the live site exactly because it's the same HTML and CSS. No Rust, no plugin, no extra install if you already have a Chromium-family browser (basically everyone on Windows does).
+
+**A real bug this script exists to dodge:** the naive version of this command is
+```bash
+msedge.exe --print-to-pdf=out.pdf "file://$(pwd)/book/print.html"
+```
+which **fails silently**. `$(pwd)` under Git Bash returns a POSIX-style path (`/c/git/...`). A native Windows `.exe` doesn't understand that format inside a `file://` URL, so Edge just prints its own **"File not found" error page** as a small, valid-looking PDF — no error, no crash, just 80KB of nothing where your book should be. It's easy to miss because the command exits 0 and produces a real file.
+
+The script avoids this with `pwd -W` (Windows-style `C:/...` path) and also runs a sanity check on the output size, failing loudly instead of handing you a silently-broken 80KB PDF. If you ever build this command by hand instead of using the script, verify with:
+```bash
+pdftotext "book/100-solopreneur-short-stories.pdf" - | head -20
+```
+If you see "File not found" / "ERR_FILE_NOT_FOUND" instead of the book's introduction, the path format is wrong.
+
+To pick a different output filename:
+```bash
+./scripts/generate-pdf.sh my-custom-name.pdf
+```
 
 ---
 

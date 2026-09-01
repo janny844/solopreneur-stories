@@ -1,0 +1,10 @@
+/* Overrides mdbook-epub's bundled boilerplate stylesheet.
+   The boilerplate forces `page-break-before: always` on every h1 AND h2.
+   Our stories use ~5 short h2 subsections each, so that rule was starting
+   a fresh page after nearly every paragraph, leaving most of each page
+   blank. Keep the break on h1 (each story should start on a fresh page)
+   but remove it from h2 (subsections should flow within a story). */
+h2 {
+    page-break-before: avoid;
+    break-before: avoid;
+}

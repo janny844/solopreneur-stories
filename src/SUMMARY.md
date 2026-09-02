@@ -33,7 +33,7 @@
 - [Steph Smith](stories/steph-smith.md)
 - [Daniel Vassallo](stories/daniel-vassallo.md)
 - [Josh Pigford](stories/josh-pigford.md)
-- [Jon O'Bryan](stories/john-obrien.md)
+- [The Night Shift Nurse](stories/the-night-shift-nurse.md)
 - [Tyler Tringas](stories/tyler-tringas.md)
 - [Sara Blakely](stories/sara-blakely.md)
 - [Nathan Latka](stories/nathan-latka.md)

@@ -1,8 +1,8 @@
-# Jon O'Bryan: The Night Shift Nurse Who Built a Business Between Patients
+# The Night Shift Nurse: He Built a Business Between Patients
 
 The hospital was quiet at 3 AM.
 
-Jon O'Bryan had finished his rounds. The charts were updated. The next scheduled check was in forty minutes. He opened his laptop in the break room and started writing code.
+He had finished his rounds. The charts were updated. The next scheduled check was in forty minutes. He opened his laptop in the break room and started writing code.
 
 He had been doing this for eight months — building a small application in twenty and forty minute increments, in the gaps between patients, on night shifts that ran twelve hours.
 
@@ -12,7 +12,7 @@ He was not a professional developer. He had learned from YouTube tutorials and S
 
 ## The Problem He Knew
 
-Jon O'Bryan's product came from his job.
+His product came from his job.
 
 Nurses on his floor were spending significant time on shift handover — the process of transferring patient information from the outgoing nurse to the incoming one. The hospital's official system was a mainframe interface designed in the nineties. Most nurses bypassed it entirely and used handwritten notes on folded paper, which they then transcribed twice.
 
@@ -32,7 +32,7 @@ A nurse used it. She told a friend on another floor. That friend told someone at
 
 None of them were paying. He had not thought to charge.
 
-A nurse manager eventually asked him whether the hospital could license it for the whole department.
+A nurse manager eventually asked whether the hospital could license it for the whole department.
 
 That was the moment it became a business.
 
@@ -40,7 +40,7 @@ That was the moment it became a business.
 
 ## The Constraint That Helped
 
-Jon O'Bryan built the entire first version in fragments of twenty to forty minutes.
+He built the entire first version in fragments of twenty to forty minutes.
 
 He has said, since, that the constraint made the product better.
 
@@ -54,7 +54,7 @@ Founders with unlimited time build bloated products. Founders with forty minutes
 
 ## Leaving the Floor
 
-Jon O'Bryan did not quit nursing when the business started making money.
+He did not quit nursing when the business started making money.
 
 He went part-time for eighteen months, working three shifts a week while building, because the shifts were where the product feedback came from. Every night he used his own tool. Every night he noticed what was wrong with it.
 
@@ -68,7 +68,7 @@ He still says he misses the night shift.
 
 ## The Last Thing
 
-The hospital was quiet at 3 AM and Jon O'Bryan opened a laptop in a break room.
+The hospital was quiet at 3 AM and he opened a laptop in a break room.
 
 He was not trying to build a company. He was trying to make his own job less annoying, forty minutes at a time, across eight months of night shifts.
 

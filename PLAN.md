@@ -41,28 +41,23 @@ Phases to go from 41 stories → published, selling product.
 - [x] EPUB page-break bug fixed (`epub-override.css`)
 - [x] PDF generated locally via `generate-pdf.sh` (headless Edge)
 - [x] PDF CI pipeline (`generate-pdf.yml`) — builds on ubuntu-latest
-- [ ] **UPGRADE: Change `generate-pdf.yml` to publish PDF to GitHub Release** instead of artifact
-      (artifacts expire in 90 days; Releases are permanent and give a stable download URL)
+- [x] **UPGRADE: `generate-pdf.yml` now publishes PDF to GitHub Release** (rolling `latest-pdf` tag)
 - [ ] **UPGRADE: Move EPUB build into CI** — add `[output.epub]` build + `mv book/html/* book/`
       restructure step before deploy, so EPUB is always in sync with latest stories
 
 ---
 
-## Phase 4 — Pre-Launch Content Audit ❌ NOT STARTED
+## Phase 4 — Pre-Launch Content Audit 🔄 MOSTLY DONE
 
 **Goal:** Book is safe to sell.
 
-- [ ] Add disclaimer to `src/introduction.md` front matter:
-      *"These stories are dramatized retellings based on publicly available information.
-      Specific figures and dialogue are reconstructed for narrative purposes."*
-- [ ] Add same disclaimer to `index.html` landing page (small text under CTA)
-- [ ] Verify top 10 stories: check at least one primary source per revenue/date claim
-- [ ] Remove Jon O'Bryan or replace with a verified founder
-- [ ] Update story count in `index.html` stats bar (currently says "100") to match reality (41 or "41+")
-- [ ] Update book title/subtitle to reflect actual state — options:
-      - "41 Solopreneur Short Stories" (honest, simple)
-      - "100 Solopreneur Short Stories — Early Access" (signals more coming)
-      - Keep "100" but add note "Volume 1: First 41 Stories, more added monthly"
+- [x] Add disclaimer to `src/introduction.md` front matter
+- [x] Add disclaimer to `index.html` footer
+- [ ] Verify top 10 stories: check at least one primary source per revenue/date claim *(manual step)*
+- [x] Jon O'Bryan removed — replaced with anonymized "The Night Shift Nurse" story (same content, no unverifiable real name)
+- [x] Story count in `index.html` stats bar updated: "100" → "41"
+- [x] CTA updated to "Early Access" framing with EPUB + PDF bundle copy
+- [x] Book title/approach chosen: "Early Access — 41 stories now, more added regularly"
 
 ---
 

@@ -6,14 +6,19 @@
 
 <div style="text-align:center; padding:2rem; background:#1e293b; border-radius:12px; margin:2rem 0;">
   <h2 style="margin-top:0; color:#f8fafc;">Get the Complete Collection</h2>
-  <p style="color:#94a3b8; margin-bottom:1.5rem;">All 100 stories. EPUB for Kindle, iPad, or any e-reader. One payment, yours forever.</p>
+  <p style="color:#94a3b8; margin-bottom:0.5rem;">Early Access — 41 stories now, more added regularly.</p>
+  <p style="color:#94a3b8; margin-bottom:1.5rem;">Includes both EPUB (Kindle, iPad, any e-reader) and PDF. One payment, yours forever.</p>
   <a href="YOUR_LEMON_SQUEEZY_OR_GUMROAD_URL"
      target="_blank"
      style="background:#38bdf8; color:#0f172a; font-weight:bold; padding:0.85rem 1.75rem; border-radius:8px; text-decoration:none; font-size:1.1rem; display:inline-block;">
-    Download Full EPUB — $9
+    Download EPUB + PDF Bundle &mdash; $9
   </a>
   <p style="color:#64748b; font-size:0.9rem; margin-top:1rem;">First 3 stories are free below. No account required.</p>
 </div>
+
+---
+
+> **Note:** These are dramatized retellings. Stories are written in narrative essay style based on publicly available information — interviews, blog posts, and public records. Specific figures, dialogue, and scene details are reconstructed for narrative purposes and may not be verbatim. They are not journalism and should not be cited as factual accounts.
 
 ---
 

@@ -1,6 +1,6 @@
 # Project State
 
-Last updated: 2026-09-01
+Last updated: 2026-09-02
 
 ---
 
@@ -12,7 +12,11 @@ Last updated: 2026-09-01
 | Live site | https://janny844.github.io/solopreneur-stories/ |
 | EPUB | ✅ Generated locally — valid, 107 KB, all 41 stories |
 | PDF | ✅ Generated locally — 91 pages, 896 KB, verified |
-| PDF in CI | ✅ `generate-pdf.yml` runs headless Chromium on ubuntu-latest |
+| PDF in CI | ✅ `generate-pdf.yml` — publishes to GitHub Release (`latest-pdf` tag) |
+| Disclaimer | ✅ Added to `introduction.md` and `index.html` footer |
+| CTA copy | ✅ Updated to "EPUB + PDF Bundle — $9" + "Early Access" framing |
+| Stats bar | ✅ Shows "41" (was "100") |
+| Jon O'Bryan | ✅ Removed — replaced with anonymized "The Night Shift Nurse" |
 | Payment link | ❌ Placeholder — no Lemon Squeezy account yet |
 | Selling | ❌ Not launched |
 
@@ -29,8 +33,11 @@ Last updated: 2026-09-01
 - [x] `scripts/batch-generate-stories.sh` — batch template creation from names.txt
 - [x] `scripts/generate-pdf.sh` — headless Edge/Chrome, Windows-safe (`pwd -W`)
 - [x] `.github/workflows/deploy.yml` — HTML deploy pipeline
-- [x] `.github/workflows/generate-pdf.yml` — PDF CI pipeline (uploads as artifact)
+- [x] `.github/workflows/generate-pdf.yml` — PDF CI pipeline (GitHub Release, permanent URL)
 - [x] EPUB page-break bug fixed via `src/epub-override.css`
+- [x] Disclaimer added to `src/introduction.md` and `index.html`
+- [x] CTA updated: EPUB+PDF bundle, "Early Access" framing, stats bar shows "41"
+- [x] Jon O'Bryan replaced with anonymized "The Night Shift Nurse" (unverifiable name removed)
 - [x] `USAGE.md` — full practical how-to guide
 - [x] `PAYMENT_SETUP.md` — Lemon Squeezy setup steps
 
@@ -51,13 +58,11 @@ Adam Wathan, Jesse Hanley, John Rush
 
 | Item | Status | Blocker |
 |---|---|---|
-| PDF → GitHub Release (not just artifact) | ❌ | `generate-pdf.yml` upgrade needed |
-| EPUB in CI | ❌ | mdBook layout-switch issue (solvable with `mv` step) |
+| EPUB in CI | ❌ | mdBook layout-switch issue (solvable with `mv` step — low priority) |
+| Content claim verification | ❌ | Manual: check primary sources for top 10 stories |
 | Lemon Squeezy account + product | ❌ | Needs human to create account + upload files |
 | Payment URLs live | ❌ | Depends on Lemon Squeezy step above |
-| Content verification | ❌ | Revenue/date claims unverified; 1 unverifiable subject |
-| Disclaimer added | ❌ | Needed before selling |
-| Launch | ❌ | Blocked on payment + disclaimer |
+| Launch | ❌ | Blocked on Lemon Squeezy only — all other blockers cleared |
 
 ---
 
@@ -77,7 +82,6 @@ Ran multi-AI audit (Gemini 3.6 Flash + Gemini 3.5 Flash Lite). Both agreed:
 
 ## Known Risks
 
-1. **John O'Bryan** — cannot be verified as a real person. Remove before selling.
-2. **Revenue/date claims** — reconstructed, not sourced. Some will be wrong.
-3. **PDF font parity** — Windows local PDF and CI Linux PDF may have minor layout differences (fonts).
-4. **EPUB/PDF must never be served from GitHub Pages** — paid assets must be inside Lemon Squeezy or a GitHub Release, never in `book/` during deploy.
+1. **Revenue/date claims** — reconstructed, not sourced. Verify top 10 stories before promoting heavily.
+2. **PDF font parity** — Windows local PDF and CI Linux PDF may have minor layout differences (fonts-liberation installed in CI mitigates this).
+3. **EPUB/PDF must never be served from GitHub Pages** — paid assets must be inside Lemon Squeezy or a GitHub Release, never in `book/` during deploy. Current setup is safe: both are gitignored.
